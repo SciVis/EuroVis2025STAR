@@ -1,0 +1,1771 @@
+@article{Raith2023,
+	abstract = {
+Extracting level sets from scalar data is a fundamental operation in visualization with many applications. Recently, the concept of level set extraction has been extended to bivariate scalar fields. Prior work on vector field equivalence, wherein an analyst marks a region in the domain and is shown other regions in the domain with similar vector values, pointed out the need to make this extraction operation fast, so that analysts can work interactively. To date, the fast extraction of level sets from bivariate scalar fields has not been researched as extensively as for the univariate case. In this paper, we present a novel algorithm that extracts fiber lines, i.e., the preimages of so called control polygons (FSCP), for bivariate 2D data by joint traversal of bounding volume hierarchies for both grid and FSCP elements. We performed an extensive evaluation, comparing our method to a two-dimensional adaptation of the method proposed by Klacansky et al., as well as to the naive approach for fiber line extraction. The evaluation incorporates a vast array of configurations in several datasets. We found that our method provides a speedup of several orders of magnitudes compared to the naive algorithm and requires two thirds of the computation time compared to Klacansky et al. adapted for 2D.},
+	author = {Felix Raith and B. Nsonga and Gerik Scheuermann and Christian Heine},
+	doi = {10.1109/VIS54172.2023. 00021},
+	journal = {IEEE Visualization and Visual Analytics (VIS)},
+	pages = {156--160},
+	title = {Fast Fiber Line Extraction for 2D Bivariate Scalar Fields},
+        file     = {:pdfs/Raith2023.pdf:PDF},
+	year = {2023}}
+
+@article{Sharma2023,
+    author={Sharma, Mohit and Masood, Talha Bin and Thygesen, Signe Sidwall and Linares, Mathieu and Hotz, Ingrid and Natarajan, Vijay},
+    journal={IEEE Transactions on Visualization and Computer Graphics}, 
+    title={Continuous Scatterplot Operators for Bivariate Analysis and Study of Electronic Transitions}, 
+    year={2024},
+    volume={30},
+    number={7},
+    pages={3532-3544},
+    file     = {:pdfs/Sharma2023.pdf:PDF},
+    doi={10.1109/TVCG.2023.3237768}}
+
+@inproceedings{Kloetzl2022,
+    author={Klötzl, Daniel and Krake, Tim and Zhou, Youjia and Stober, Jonathan and Schulte, Kathrin and Hotz, Ingrid and Wang, Bei and Weiskopf, Daniel},
+    booktitle={2022 Topological Data Analysis and Visualization (TopoInVis)}, 
+    title={Reduced Connectivity for Local Bilinear Jacobi Sets}, 
+    abstract = {We present a new topological connection method for the local bilinear computation of Jacobi sets that improves the visual representation while preserving the topological structure and geometric configuration.
+                To this end, the topological structure of the local bilinear method is utilized, which is given by the nerve complex of the traditional piecewise linear method.
+                Since the nerve complex consists of higher-dimensional simplices, the local bilinear method (visually represented by the 1-skeleton of the nerve complex) leads to clutter via crossings of line segments.
+                Therefore, we propose a homotopy-equivalent representation that uses different collapses and edge contractions to remove such artifacts.
+                Our new connectivity method is easy to implement, comes with only little overhead, and results in a less cluttered representation.},
+    year={2022},
+    volume={},
+    number={},
+    pages={39-48},
+    file     = {:pdfs/Kloetzl2022.pdf:PDF},
+    doi={10.1109/TopoInVis57755.2022.00011}}
+
+@INPROCEEDINGS{Sharma2022,
+    author={Sharma, Mohit and Natarajan, Vijay},
+    booktitle={2022 Topological Data Analysis and Visualization (TopoInVis)}, 
+    title={Jacobi Set Driven Search for Flexible Fiber Surface Extraction}, 
+    year={2022},
+    volume={},
+    number={},
+    pages={49-58},
+    abstract={Isosurfaces are an important tool for analysis and visualization of univariate scalar fields. Earlier works have demonstrated the presence of interesting isosurfaces at isovalues close to critical values. This motivated the development of efficient methods for computing individual components of isosurfaces restricted to a region of interest. Generalization of isosurfaces to fiber surfaces and critical points to Jacobi sets has resulted in new approaches for analyzing bivariate scalar fields. Unlike isosurfaces, there exists no output sensitive method for computing fiber surfaces. Existing methods traverse through all the tetrahedra in the domain. In this paper, we propose the use of the Jacobi set to identify fiber surface components of interest and present an output sensitive approach for its computation. The Jacobi edges are used to initiate the search towards seed tetrahedra that contain the fiber surface, thereby reducing the search space. This approach also leads to effective analysis of the bivariate field by supporting the identification of relevant fiber surfaces near Jacobi edges.},
+    keywords = {Jacobi set, fiber surface},
+    doi={10.1109/TopoInVis57755.2022.00012},
+    file     = {:pdfs/Sharma2022.pdf:PDF},
+    ISSN={},
+    month={Oct}}
+
+
+@incollection{Zhou2022,
+	abstract = {The mapper construction is a powerful tool from topological data analysis that is designed for the analysis and visualization of multivariate data. In this paper, we investigate a method for stitching a pair of univariate mappers together into a bivariate mapper, and study topological notions of information gains, referred to as topological gains, during such a process. We further provide implementations that visualize such topological gains for mapper graphs.},
+	author = {Youjia Zhou and Nathaniel Saul and Ilkin Safarli and Bala Krishnamoorthy and Bei Wang},
+	booktitle = {Research in Comutational Topology 2},
+	doi = {https://doi.org/10.1007/978-3-030-95519-9_12},
+	editor = {Gasparovic, E. and Robins, V. and Turner, K},
+	publisher = {Springer},
+	series = {Association for Women in Mathematics Series,vol 30},
+	title = {Stitch Fix for Mapper and Topological Gains},
+        file     = {:pdfs/Zhou2022.pdf:PDF},
+	year = {2022}}
+
+@article{Brown2021,
+	abstract = {We study the probabilistic convergence between the mapper graph and the Reeb graph of a topological space X equipped with a continuous function f : X → R. We first give a categorification of the mapper graph and the Reeb graph by interpreting them in terms of cosheaves and stratified covers of the real line R. We then introduce a variant of the classic mapper graph of Singh et al. (in: Eurographics symposium on point- based graphics, 2007), referred to as the enhanced mapper graph, and demonstrate that such a construction approximates the Reeb graph of (X, f ) when it is applied to points randomly sampled from a probability density function concentrated on (X, f ). Our techniques are based on the interleaving distance of constructible cosheaves and topological estimation via kernel density estimates. Following Munch and Wang (In: 32nd international symposium on computational geometry, volume 51 of Leibniz international proceedings in informatics (LIPIcs), Dagstuhl, Germany, pp 53:1--53:16, 2016), we first show that the mapper graph of (X, f ), a constructible R-space (with a fixed open cover), approximates the Reeb graph of the same space. We then construct an isomorphism between the mapper of (X, f ) to the mapper of a super-level set of a probability density function concentrated on (X, f ). Finally, building on the approach of Bobrowski et al. (Bernoulli 23(1):288--328, 2017b), we show that, with high probability, we can recover the mapper of the super-level set given a sufficiently large sample. Our work is the first to consider the mapper construction using the theory of cosheaves in a probabilistic setting. It is part of an ongoing effort to combine sheaf theory, probability, and statistics, to support topological data analysis with random data.},
+	author = {Adam Brown and Omer Bobrowski and Elizabeth Munch and Bei Wang},
+	doi = {doi.org/10.1007/s41468-020-00063-x},
+	journal = {Journal of Applied and Computational Topology},
+	keywords = {Topological data analysis, Mapper, Computational topology, Constructible cosheaves, TDA},
+	number = {99},
+	pages = {140},
+	title = {Probabalistic convergence and stability of random mapper graphs},
+        file     = {:pdfs/Brown2021.pdf:PDF},
+	volume = {5},
+	year = {2021}}
+
+@article{Kumpf2021,
+	abstract = {For an ensemble of 3D multi-parameter fields, we present a visual analytics workflow to analyse whether and which parts of a selected multi-parameter distribution is present in all ensemble members. Supported by a parallel coordinate plot, a multi-parameter brush is applied to all ensemble members to select data points with similar multi-parameter distribution. By a combination of spatial sub-division and a covariance analysis of partitioned sub-sets of data points, a tight partition in multi-parameter space with reduced number of selected data points is obtained. To assess the representativeness of the selected multi-parameter distribution across the ensemble, we propose a novel extension of violin plots that can show multiple parameter distributions simultaneously. We investigate the visual design that effectively conveys (dis-)similarities in multi-parameter distributions, and demonstrate that users can quickly comprehend parameter-specific differences regarding distribution shape and representativeness from a side-by-side view of these plots. In a 3D spatial view, users can analyse and compare the spatial distribution of selected data points in different ensemble members via interval-based isosurface raycasting. In two real-world application cases we show how our approach is used to analyse the multi-parameter distributions across an ensemble of 3D fields.},
+	author = {Alexander Kumpf and Josef Stumpfegger and Patrick Fabian H{\"a}rtl and R{\"u}diger Westermann},
+	journal = {{IEEE Transactions on Visualization and Computer Graphics}},
+	keywords = {ensemble, distribution, parallel coordinates, brushing, violine plots},
+	number = {xx},
+	title = {Visual analysis of Multi-Parameter Distribuions across Ensembles of 3d Fields},
+	volume = {xx},
+        file     = {:pdfs/Kumpf2021.pdf:PDF},
+	year = {2021}}
+
+@inproceedings{Raith2021,
+	abstract = {Eddy detection is a state of the art tool to examine transport behavior in oceans, as they form circular movements that are highly involved in transferring mass in an ocean. To achieve this, ocean simulations are run multiple times, and an eddy detection is performed in the final simulation results. Unfortunately, this process is affected by a variety of uncertainties. In this manuscript, we aim to identify the types of uncertainty inherent in ocean simulations. For each of the identified uncertainties, we provide a quantification approach. Based on the quantified uncertainties, we provide a visualization approach that consists of domain embedded views and an uncertainty space view connected via interaction. We showed the effectiveness of our approach by performed a case study of the Red Sea.},
+	author = {Raith, Felix and Scheuermann, Gerik and Gillmann, Christina},
+	booktitle = {Workshop on Visualisation in Environmental Sciences (EnvirVis)},
+	doi = {10.2312/envirvis.20211080},
+	editor = {Dutta, Soumya and Feige, Kathrin and Rink, Karsten and Zeckzer, Dirk},
+	isbn = {978-3-03868-148-9},
+	keywords = {uncertainty, fiber surface, Red Sea, eddy, vortex detection,},
+	publisher = {The Eurographics Association},
+	title = {{Uncertainty-aware Detection and Visualization of Ocean Eddies in Ensemble Flow Fields - A Case Study of the Red Sea}},
+        file     = {:pdfs/Raith2021.pdf:PDF},
+	year = {2021},
+	bdsk-url-1 = {https://doi.org/10.2312/envirvis.20211080}}
+
+@inproceedings{Sharma2021,
+	abstract = {Electronic transitions in molecules due to absorption or emission of light is a complex quantum mechanical process. Their study plays an important role in the design of novel materials. A common yet challenging task in the study is to determine the nature of those electronic transitions, i.e. which subgroups of the molecule are in- volved in the transition by donating or accepting electrons, followed by an investigation of the variation in the donor-acceptor behavior for different transitions or conformations of the molecules. In this paper, we present a novel approach towards the study of electronic transitions based on the visual analysis of a bivariate field, namely the electron density in the hole and particle Natural Transition Or- bital (NTO). The visual analysis focuses on the continuous scatter plots (CSPs) of the bivariate field linked to their spatial domain. The method supports selections in the CSP visualized as fiber surfaces in the spatial domain, the grouping of atoms, and segmentation of the density fields to peel the CSP. This peeling operator is central to the visual analysis process and helps identify donors and acceptors. We study different molecular systems, identifying local excitation and charge transfer excitations to demonstrate the utility of the method.},
+	author = {Mohit Sharma and Talha Bin Masood and Signe S. Thygesen and Mathieu Linares and Ingrid Hotz and Vijay Natarajan},
+	booktitle = {IEEE Visualization 2021 short papers},
+	keywords = {Charge transfer, Electron density, orbital, continuous scatterplot, peeling, fiber surface},
+	title = {Segmentation driven Peeling for Visual Analysis of Electronic Transitions},
+        file     = {:pdfs/Sharma2021.pdf:PDF},
+	year = {2021}}
+
+@article{Yan2021b,
+	abstract = {In topological data analysis and visualization, topological descriptors such as persistence diagrams, merge trees, contour trees, Reeb graphs, and Morse--Smale complexes play an essential role in capturing the shape of scalar field data. 
+We present a state-of-the-art report on scalar field comparison using topological descriptors. 
+We provide a taxonomy of existing approaches based on visualization tasks associated with three categories of data: single fields, time-varying fields, and ensembles. 
+These tasks include symmetry detection, periodicity detection, key event/feature detection, feature tracking, clustering, and structure statistics. Our main contributions include the formulation of a set of desirable mathematical and computational properties of comparative measures and classification of visualization tasks and applications that are enabled by these measures. },
+	author = {Lin Yan and Talha Bin Masood and Raghavendra Sridharamurthy and Farhan Rasheed and Vijay Natarajan and Ingrid Hotz and Bei Wang},
+	journal = {{Computer Graphics Forum}},
+	keywords = {metric, topology, contour tree, Morse-Smale, comparative visualizaiton, tracking},
+	number = {3},
+	pages = {599-633},
+	title = {Scalar Field Comparison with Topological Descriptors: Properties and Applications for Scientific Visualization},
+        file     = {:pdfs/Yan2021b.pdf:PDF},
+	volume = {40},
+	year = {2021}}
+
+@Article{Zheng2021,
+  author   = {B. Zheng and F. Sadlo},
+  journal  = {{IEEE Transactions on Visualization and Computer Graphics (TVCG)}},
+  abstract = {In this paper, we introduce uncertainty to continuous scatterplots and continuous parallel coordinates. We derive respective models, validate them with sampling-based brute-force schemes, and present acceleration strategies for their computation. At the same time, we show that our approach lends itself as well for introducing uncertainty into the definition of fibers in bivariate data. Finally, we demonstrate the properties and the utility of our approach using specifically designed synthetic cases and simulated data.},
+  title    = {Uncertainty in continuous scatterplots, continuous parallel coordinates, and fibers},
+  file     = {:pdfs/Zheng2021.pdf:PDF},
+  year     = {2021},
+  number   = {2},
+  pages    = {1819--1828},
+  volume   = {27},
+  doi      = {10 .1109/TVCG.2020.3030466},
+  keywords = {uncertainty, bi-variate, parallel coordinates},
+}
+
+@inproceedings{Zhou2021,
+	author = {Youjia Zhou and Nithin Chalapathi and Archit Rathore and Yaodong Zhao and Bei Wang.},
+        abstract = {The mapper algorithm is a popular tool from topological data analysis for extracting topological summaries of high-dimensional datasets. In this paper, we present Mapper Interactive, a web-based framework for the interactive analysis and visualization of high-dimensional point cloud data. It implements the mapper algorithm in an interactive, scalable, and easily extendable way, thus supporting practical data analysis. In particular, its command-line API can compute mapper graphs for 1 million points of 256 dimensions in about 3 minutes (4 times faster than the vanilla implementation). Its visual interface allows on-the-fly computation and manipulation of the mapper graph based on user-specified parameters and supports the addition of new analysis modules with a few lines of code. Mapper Interactive makes the mapper algorithm accessible to nonspecialists and accelerates topological analytics workflows.},
+	booktitle = {EEE Pacific Visualization Symposium},
+	doi = {10.1109/PacificVis52677.2021.00021},
+	note = {arXiv:2011.03209},
+	title = {Mapper Interactive: A Scalable, Extendable, and Interactive Toolbox for the Visual Exploration of High-Dimensional Data},
+        file     = {:pdfs/Zhou2021.pdf:PDF},
+	year = {2021}}
+
+@article{Blecha2020,
+	abstract = {Scientific visualization deals with increasingly complex data consisting of multiple fields. Typical disciplines generating mul- tivariate data are fluid dynamics, structural mechanics, geology, bioengineering, and climate research. Quite often, scientists are interested in the relation between some of these variables. A popular visualization technique for a single scalar field is the extraction and rendering of isosurfaces. With this technique, the domain can be split into two parts, i.e. a volume with higher values and one with lower values than the selected isovalue. Fiber surfaces generalize this concept to two or three scalar vari- ables up to now. This article extends the notion further to potentially any finite number of scalar fields. We generalize the fiber surface extraction algorithm of Raith et al. [RBN∗19] from 3 to d dimensions and demonstrate the technique using two exam- ples from geology and climate research. The first application concerns a generic model of a nuclear waste repository and the second one an atmospheric simulation over central Europe. Both require complex simulations which involve multiple physical processes. In both cases, the new extended fiber surfaces helps us finding regions of interest like the nuclear waste repository or the power supply of a storm due to their characteristic properties.},
+	author = {Christian Blecha and Felix Raith and A.J. Pr\"ager and Thomas Nagel and J. {Ma{\ss}mann} and N. R\"ober and Michael B\"ottinger and Gerik Scheuermann},
+	journal = {{Computer Graphics Forum}},
+	keywords = {tensor, fiber surface, Iso surface, mulit-variate, region of interest},
+	number = {3},
+	pages = {317--328},
+	title = {Fiber Surfaces for many Variables},
+        file     = {:pdfs/Blecha2020.pdf:PDF},
+	volume = {39},
+	year = {2020}}
+
+@inproceedings{Botnan2020,
+	abstract = {In topological data analysis (TDA), one often studies the shape of data by constructing a filtered topological space, whose structure is then examined using persistent homology. However, a single filtered space often does not adequately capture the structure of interest in the data, and one is led to consider multiparameter persistence, which associates to the data a space equipped with a multiparameter filtration. Multiparameter persistence has become one of the most active areas of research within TDA, with exciting progress on several fronts. In this article, we introduce multiparameter persistence and survey some of this recent progress, with a focus on ideas likely to lead to practical applications in the near future.},
+	author = {Magnus Bakke Botnan and Michael Lesnick},
+	booktitle = {Workshop and International Conference on Representations of Algebras (ICRA)},
+	keywords = {Persistence, multi-parameter},
+	organization = {arXiv preprint arXiv:2203.14289},
+	title = {An Introduction to Multiparameter Persisence},
+        file     = {:pdfs/Botnan2020.pdf:PDF},
+	year = {2020}}
+
+@inproceedings{Carriere2020,
+	abstract = {In the last decade, there has been increasing interest in topological data analysis, a new methodology for using geometric structures in data for inference and learning. A central theme in the area is the idea of persistence, which in its most basic form studies how measures of shape change as a scale parameter varies. There are now a number of frameworks that support statistics and machine learning in this context. However, in many applications there are several different parameters one might wish to vary: for example, scale and density. In contrast to the one-parameter setting, techniques for applying statistics and machine learning in the setting of multiparameter persistence are not well understood due to the lack of a concise representation of the results.
+We introduce a new descriptor for multiparameter persistence, which we call the Multiparameter Persistence Image, that is suitable for machine learning and statistical frameworks, is robust to perturbations in the data, has finer resolution than existing descriptors based on slicing, and can be efficiently computed on data sets of realistic size. Moreover, we demonstrate its efficacy by comparing its performance to other multiparameter descriptors on several classification tasks.},
+	author = {Mathieu Carri{\`{e}}re and Andrew J. Blumberg},
+	booktitle = {NIPS'20: Proceedings of the 34th International Conference on Neural Information Processing Systems},
+	keywords = {TDA, ML, persistence, multi-parameter, persistence diagram, point clouds, filtration},
+	number = {1881},
+	pages = {22432--22444},
+	title = {Multiparameter persistence images for topological machine learning},
+        file     = {:pdfs/Carriere2020.pdf:PDF},
+	year = {2020}}
+
+@inproceedings{LaManna2020,
+	author = {Jacob LaManna and Jin-Hong Chen and Stacey Althaus and Yun Liu and Daniel Hussey and David Jacobson},
+	booktitle = {Microscopy and Microanalysis},
+	keywords = {multi-modal, rendering, histogram, bi-variate, segmentation},
+	pages = {1--3},
+	title = {Bivariate histogram segmentation of simultaneous neutron and x-ray tomography for improved compositional and structural determination of source rock shales},
+        file     = {:pdfs/LaManna2020.pdf:PDF},
+	volume = {26},
+	year = {2020}}
+
+@article{Raith2020,
+	abstract = {Scientific visualization deals with increasingly complex data consisting of multiple fields. Typical disciplines generating mul- tivariate data are fluid dynamics, structural mechanics, geology, bioengineering, and climate research. Quite often, scientists are interested in the relation between some of these variables. A popular visualization technique for a single scalar field is the extraction and rendering of isosurfaces. With this technique, the domain can be split into two parts, i.e. a volume with higher values and one with lower values than the selected isovalue. Fiber surfaces generalize this concept to two or three scalar vari- ables up to now. This article extends the notion further to potentially any finite number of scalar fields. We generalize the fiber surface extraction algorithm of Raith et al. [RBN∗19] from 3 to d dimensions and demonstrate the technique using two exam- ples from geology and climate research. The first application concerns a generic model of a nuclear waste repository and the second one an atmospheric simulation over central Europe. Both require complex simulations which involve multiple physical processes. In both cases, the new extended fiber surfaces helps us finding regions of interest like the nuclear waste repository or the power supply of a storm due to their characteristic properties.},
+	author = {Felix Raith and Christian Blecha and Karsten Rink and W. Wang and O. Kolditz and H. Shao and Gerik Scheuermann},
+	doi = {doi: 10.2312/envirvis. 20201093 2},
+	journal = {{Computer Graphics Forum}},
+	keywords = {tensor, geo-sciences, fiber surface, storage, multiphysics, visual analysis, multi-variate},
+	number = {3},
+	title = {Visual Analysis of a Full-Scale-Emplacement Experiment in the Underground Rock Laboratory Mont Terri using Fiber Surfaces},
+        file     = {:pdfs/Raith2020.pdf:PDF},
+	volume = {39},
+	year = {2020}}
+
+@InCollection{Sakurai2020,
+  author     = {Daisuke Sakurai and Kenji Ono and Hamish Carr and Jorji Nonaka and Tomohiro Kawanabe},
+  booktitle  = {Topological Methods in Data Analysis and Visualization V},
+  publisher  = {Springer},
+  title      = {Flexible Fiber Surfaces: A Reeb-Free Approach},
+  year       = {2020},
+  editor     = {Hamish Carr and Issei Fujishiro and Filip Sadlo and Shigeo Takahashi},
+  note       = {TopoInVis 2017},
+  pages      = {187--201},
+  series     = {Mathematics and Visualization},
+  abstract   = {The fiber surface generalizes the popular isosurface to multi-fields, so that pre-images can be visualized as surfaces. As with the isosurface, however, the fiber surface suffers from visual occlusion. We propose to avoid such occlusion by restricting the components to only the relevant ones with a new component-wise flexing algorithm. The approach, flexible fiber surface, generalizes the manipulation idea found in the flexible isosurface for the fiber surface. The flexible isosurface in the original form, however, relies on the contour tree. For the fiber surface, this corresponds to the Reeb space, which is challenging for both the computation and user interaction. We thus take a Reeb-free approach, in which one does not compute the Reeb space. Under this constraint, we generalize a few selected interactions in the flexible isosurface and discuss the implication of the restriction.},
+  bdsk-url-1 = {https://doi.org/10.%201007/978-3-030-43036-8_12%202},
+  doi        = {doi: 10. 1007/978-3-030-43036-8_12 2},
+  file       = {:pdfs/Sakurai2020.pdf:PDF},
+  keywords   = {topology, fiber surface, Reeb space},
+}
+
+@article{Abbas2019,
+	abstract = {We propose ClustMe, a new visual quality measure to rank monochrome scatterplots based on cluster patterns. ClustMe is based on data collected from a human-subjects study, in which 34 participants judged synthetically generated cluster patterns in 1000 scatterplots. We generated these patterns by carefully varying the free parameters of a simple Gaussian Mixture Model with two components. and asked the participants to count the number of clusters they could see (1 or more than 1). Based on the results, we form ClustMe by selecting the model that best predicts these human judgments among 7 different state-of-the-art merging techniques (DEMP). To quantitatively evaluate ClustMe, we conducted a second study, in which 31 human subjects ranked 435 pairs of scatterplots of real and synthetic data in terms of cluster patterns complexity. We use this data to compare ClustMe's performance to 4 other state-of-the-art clustering measures, including the well-known Clumpiness scagnostics. We found that of all measures, ClustMe is in strongest agreement with the human rankings.},
+	author = {Mostafa M. Abbas and Michael Aupetit and Michael Sedlmair and Halima Bensmail},
+	journal = {{Computer Graphics Forum}},
+	keywords = {infovis, scatterplot},
+	number = {3},
+	title = {ClustMe: A Visual Quality Measure for Ranking Monochrome Scatterplots based on Cluster Patterns},
+        file     = {:pdfs/Abbas2019.pdf:PDF},
+	volume = {38},
+	year = {2019}}
+
+@misc{Carriere2019,
+	abstract = {Reeb spaces, as well as their discretized versions called Mappers, are common descriptors used in Topological Data Analysis, with plenty of applications in various fields of science, such as computational biology and data visualization, among others. The stability and quantification of the rate of convergence of the Mapper to the Reeb space has been studied a lot in recent works~\cite{Brown2019, Carriere2018a, Carriere2018, Munch2016}, focusing on the case where a scalar-valued filter is used for the computation of Mapper. On the other hand, much less is known in the multivariate case, where the domain of the filter is in $\mathbb R^d$ instead of $\mathbb R$. The only available result in this setting~\cite{Munch2016} only works for topological spaces and cannot be used as is for finite metric spaces representing data, such as point clouds and distance matrices. In this article, we present an approximation result for the Reeb space in the multivariate case using a Mapper-based estimator, which is a slight modification of the usual Mapper construction. Moreover, our approximation is stated with respect to a pseudometric that is an extension of the usual {\em interleaving distance} between persistence modules~\cite{Chazal2016}. Finally, we apply our results to the case where the filter function used to compute the Mapper is estimated from the data. We provide applications of this setting in statistics and machine learning and probability for different kinds of target filters, as well as numerical experiments that demonstrate the relevance of our approach.},
+	author = {Mathieu Carri{\`{e}}re and Bertrand Michel},
+	howpublished = {arXiv:1912.10742v1},
+	keywords = {Mapper, topological descriptor, filter, statistics, machine learning},
+	title = {Approximation of Reeb spaces with Mappers and Applications to Stochastic Filters},
+	year = {2019}}
+
+@article{Corbet2019,
+	author = {Rene Corbet and Ulderico Fugacci, Michael Kerber, Claudia L and Bei Wang},
+	journal = {Computers \& Graphics},
+	title = {A Kernel for Multi-Parameter Persistent Homology},
+        file     = {:pdfs/Abbas2019.pdf:PDF},
+	year = {2019}}
+
+@Article{Xiangyang2019,
+  author   = {Xiangyang He and Yubo Tao and Qirui Wang and Hai Lin},
+  journal  = {Journal of Visualization},
+  title    = {Multivariate Spatial Data Visualizaiton: A Survey},
+  year     = {2019},
+  pages    = {1--16},
+  abstract = {Multivariate spatial data plays an important role in computational science and engineering simulations. The potential features and hidden relationships in multivariate data can assist scientists to gain an in-depth understanding of a scientific process, verify a hypothesis and further discover a new physical or chemical law. In this paper, we present a comprehensive survey of the state-of- the-art techniques for multivariate spatial data visualization. We first introduce the basic concept and characteristics of multivariate spatial data, and describe three main tasks in multivariate data visualization: feature classification, fusion visualization, and correlation analysis. Finally, we prospect potential research topics for multivariate data visualization according to the current research.},
+  file     = {:pdfs/Xiangyang2019.pdf:PDF},
+  keywords = {multi-variate, spatial data, feature classification, correlation analysis},
+}
+
+@Article{Raith2019,
+  author   = {Felix Raith and Christian Blecha and Thomas Nagel and Francesco Parisio and Olaf Kolditz and Fabian Gunther and Markus Stommel and Gerik Scheuermann},
+  journal  = {{IEEE Transactions on Visualization and Computer Graphics (TVCG)}},
+  title    = {Tensor Field Visualization using Fiber Surfaces of Invariant Space},
+  year     = {2019},
+  number   = {1},
+  pages    = {1122--1131},
+  volume   = {25},
+  abstract = {Scientific visualization developed successful methods for scalar and vector fields. For tensor fields, however, effective, interactive visualizations are still missing despite progress over the last decades. We present a general approach for the generation of separating surfaces in symmetric, second-order, three-dimensional tensor fields. These surfaces are defined as fiber surfaces of the invariant space, i.e. as pre-images of surfaces in the range of a complete set of invariants. This approach leads to a generalization of the fiber surface algorithm by Klacansky et al. [16] to three dimensions in the range. This is due to the fact that the invariant space is three-dimensional for symmetric second-order tensors over a spatial domain. We present an algorithm for surface construction for simplicial grids in the domain and simplicial surfaces in the invariant space. We demonstrate our approach by applying it to stress fields from component design in mechanical engineering.},
+  doi      = {doi: 10.1109/TVCG.2018.2864846 2},
+  file     = {:pdfs/Raith2019.pdf:PDF},
+  keywords = {Tensor, iso surface, fiber surface, invariant space},
+}
+
+@Article{Zheng2019,
+  author   = {B. Zheng and Bastian Rieck and Heike Leitte andFilip Sadlo.},
+  journal  = {Computer Graphics Forum},
+  title    = {Visualization of equivalence in 2D bivariate fields},
+  year     = {2019},
+  number   = {3},
+  pages    = {311--323},
+  volume   = {38},
+  abstract = {In this paper, we show how the equivalence property leads to the novel concept of equivalent regions in mappings from Rn to Rn. We present a technique for obtaining these regions both in the domain and the codomain of such a mapping, and determine their correspondence. This enables effective investigation of variation equivalence within mappings, and between mappings in terms of comparative visualization. We implement our approach for n = 2, and demonstrate its utility using different examples.},
+  doi      = {doi: 10.1111/cgf.13691},
+  file     = {:pdfs/Zheng2019.pdf:PDF},
+}
+
+@article{Carriere2018,
+	author = {Mathieu Carri\'{e}re and Steve Oudot},
+	journal = {Foundations of Computational Mathematics},
+	number = {6},
+	pages = {1333-1396},
+	title = {Structure and Stability of the One-Dimensional Mapper},
+        file     = {:pdfs/Carriere2018.pdf:PDF},
+	volume = {18},
+	year = {2018}}
+
+@article{Molchanov2018,
+	abstract = {Clusteringalgorithmsinthehigh-dimensionalspacerequiremanydatatoperformreliably and robustly. For multivariate volume data, it is possible to interpolate between the data points in the high-dimensional attribute space based on their spatial relationship in the volumetric domain (or physical space). Thus, sufficiently high number of data points can be generated, overcoming the curse of dimensionality for this particular type of multidimensional data. We applies this idea to a histogram-based clustering algorithm. We created a uniform partition of the attribute space in multidimensional bins and computed a histogram indicating the number of data samples belonging to each bin. Without interpolation, the analysis was highly sensitive to the histogram cell sizes, yielding inaccurate clustering for improper choices: Large histogram cells result in no cluster separation, while clusters fall apart for small cells. Using an interpolation in physical space, we could refine the data by generating additional samples. The depth of the refinement scheme was chosen according to the local data point distribution in attribute space and the histogram's bin size. In the case of field discontinuities representing sharp material boundaries in the volume data, the interpolation can be adapted to locally make use of a nearest-neighbor interpolation scheme that avoids averaging values across the sharp boundary. Consequently, we could generate a density computation, where clusters stay connected even when using very small bin sizes. We exploited this result to create a robust hierarchical cluster tree, apply our technique to several datasets, and compare the cluster trees before and after interpolation.},
+	author = {Vladimir Molchanov and Lars Linsen},
+	journal = {Information MDPI},
+	keywords = {multi-dimensional data visualization; multi-field data; clustering},
+	title = {Upsampling for Improved Multidimensional Attribute Space Clustering of Multifield Data},
+        file     = {:pdfs/Molchanov2018.pdf:PDF},
+	year = {2018}}
+
+@article{Robles2018,
+	author = {Alejro Robles and Mustafa Hajij and Paul Rosen},
+	journal = {13th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications},
+	project = {Network visualization; bivariate STAR},
+	title = {The Shape of an Image: A Study of Mapper on Images},
+        file     = {:pdfs/Robles2018.pdf:PDF},
+	year = {2018}}
+
+@incollection{Thomas2018,
+	abstract = {This survey paper provides an overview of topological visualisation techniques for scalar data sets. Topological algorithms are used to reduce scalar fields to a skeleton by mapping critical changes in the topology to the vertices of graph struc- tures. These can be visualised using graph drawing techniques or used as a method of seeding meshes of distinct objects existing in the data. Many techniques are discussed in detail, beginning with a review of algorithms working on scalar fields defined with a single variable, and then generalised to multivariate and temporal data. The survey is completed with a discussion of methods of presenting data in higher dimensions.},
+	author = {Dean P. Thomas and Rita Borgo and Robert S. Laramee and Simon J. Hands},
+	booktitle = {Computer Graphics and Imaging},
+	editor = {Branislav Sobota},
+	keywords = {volume rendering, topology, multi-variate, contour tree, Reeb graph, Reeb space, joint contour net, Reeb skeleton},
+	publisher = {IntechOpen},
+	title = {Topological Visualisation Techniques for Volume Multifield Data},
+        file     = {:pdfs/Thomas2018.pdf:PDF},
+	year = {2018}}
+
+@article{Aramonova2017,
+	abstract = {We consider a problem of estimation of relationship between scalar 2D fields using gradient measure and Jacobi sets. The gradient measure method is based on estimation of alignment of gradients in every point of fields. The Jacobi set is the set of critical points of the restrictions of one function to the intersection of level sets of the other functions. We present the results of a numerical experiment for the case of multifield containing two fields: geopotential height on isobaric level 300 hPa and total ozone column, under influence of disturbing factor --- intensive solar proton events in January 2005. Estimation of interrelationship by gradient measure indicates strengthening of interacton between field of period 16th-22th January 2005. The estimation made by Jacobi sets coputation also shown strenghtening a relation between analysed field during solar proton events.},
+	author = {V Artamonova and V V Alekseev and N G Mararenko},
+	journal = {Journal of Physics: Conf. Series},
+	keywords = {Jacobi set, geophysics, multi-field},
+	title = {Gradient measure and Jacobi sets for estimation of interrelationship between geophysical multifields},
+        file     = {:pdfs/Aramonova2017.pdf:PDF},
+	url = {https://iopscience.iop.org/article/10.1088/1742-6596/798/1/012040/pdf},
+	volume = {798},
+	year = {2017},
+	bdsk-url-1 = {https://iopscience.iop.org/article/10.1088/1742-6596/798/1/012040/pdf}}
+
+@misc{Grafvert2017,
+	abstract = {In this paper we explain how to convert discrete invariants into stable ones via what we call hierarchical stabilization. We illustrate this pro- cess by constructing stable invariants for multi-parameter persistence modules with respect to so called simple noise systems. For one parameter, we recover the standard barcode information. For more than one parameter we prove that the constructed invariants are in general NP-hard to calculate.},
+	author = {Oliver G\"afvert and Wojciech Chacholski},
+	howpublished = {arXiv:1703.03632v2},
+	keywords = {Persistence, stability, multi-dimensional, TDA},
+	title = {Stable Invariants for Multiparameter Persistence},
+        file     = {:pdfs/Grafvert2017.pdf:PDF},
+	year = {2017}}
+
+@incollection{Huettenberger2017,
+	abstract = {For the scientific visualization and analysis of univariate (scalar) fields several topological approaches like contour trees and Reeb graphs were studied and compared to each other some time ago. In recent years, some of those approaches were generalized to multivariate fields. Among others, data structures like the joint contour net (JCN) and the Pareto set were introduced and improved in subsequent work. However, both methods utilized individual data sets as test cases for their proof-of-concept sections and partially lacked a complete comparison to other multivariate approaches. Hence, to better understand the relationship between those two data structures and to gain insights into general multivariate topology, we present a deeper comparison of JCNs and Pareto sets in which we integrate data sets applied in the original JCN and Pareto set papers.},
+	author = {Lars Huettenberger and Christian Heine and Christoph Garth},
+	booktitle = {Topological Methods in Data Analysis and Visualization {IV}, Theory, Algorithms, and Applications},
+	editor = {Hamish Carr and Christoph Garth and Tino Weinkauf},
+	keywords = {pareto set, topology multi-variate},
+	publisher = {Springer International Publishing},
+	title = {A Comparison of Joint Contour Nets and Pareto Sets},
+	year = {2017}}
+
+@incollection{Oesterling2017,
+	abstract = {We introduce a new method that identifies and tracks features in arbitrary dimensions using the merge tree---a structure for identifying topological features based on thresholding in scalar fields. This method analyzes the evolution of features of the function by tracking changes in the merge tree and relates features by matching subtrees between consecutive time steps. Using the time-varying merge tree, we present a structural visualization of the changing function that illustrates both features and their temporal evolution. We demonstrate the utility of our approach by applying it to temporal cluster analysis of high-dimensional point clouds.
+},
+	author = {P. Oesterling and Christian Heine and Gunther Weber and Dmitriy Morozov and Gerik Scheuermann},
+	booktitle = {Topological Methods in Data Analysis and Visualization IV, Theory, Algorithms, and Applications},
+	editor = {Hamish Carr and Christoph Garth and Tino Weinkauf},
+	keywords = {Topology, tracking, contour tree, time-dependent features},
+	publisher = {Springer},
+	series = {Mathematics and Visualization},
+	title = {Computing and Visualizing Time-Varying Merge Trees for High-Dimensional Data},
+        file     = {:pdfs/Oesterling2017.pdf:PDF},
+	year = {2017}}
+
+@Article{Tierny2017b,
+  author   = {Julien Tierny and Hamish Carr},
+  journal  = {{IEEE Transactions on Visualization and Computer Graphics (TVCG)}},
+  title    = {Jacobi Fiber Surfaces for Bivariate Reeb Space Computation},
+  year     = {2017},
+  number   = {1},
+  pages    = {960--969},
+  volume   = {23},
+  abstract = {This paper presents an efficient algorithm for the computation of the Reeb space of an input bivariate piecewise linear scalar function f defined on a tetrahedral mesh. By extending and generalizing algorithmic concepts from the univariate case to the bivariate one, we report the first practical, output-sensitive algorithm for the exact computation of such a Reeb space. The algorithm starts by identifying the Jacobi set of f, the bivariate analogs of critical points in the univariate case. Next, the Reeb space is computed by segmenting the input mesh along the new notion of Jacobi Fiber Surfaces, the bivariate analog of critical contours in the univariate case. We additionally present a simplification heuristic that enables the progressive coarsening of the Reeb space. Our algorithm is simple to implement and most of its computations can be trivially parallelized. We report performance numbers demonstrating orders of magnitude speedups over previous approaches, enabling for the first time the tractable computation of bivariate Reeb spaces in practice. Moreover, unlike range-based quantization approaches (such as the Joint Contour Net), our algorithm is parameter-free. We demonstrate the utility of our approach by using the Reeb space as a semi-automatic segmentation tool for bivariate data. In particular, we introduce continuous scatterplot peeling, a technique which enables the reduction of the cluttering in the continuous scatterplot, by interactively selecting the features of the Reeb space to project. We provide a VTK-based C++ implementation of our algorithm that can be used for reproduction purposes or for the development of new Reeb space based visualization techniques.},
+  file     = {:pdfs/Tierny2017b.pdf:PDF},
+  keywords = {Jacobi set, topolgy, multi-variate, segmentation},
+}
+
+@Article{WangJ2017,
+  author   = {Junpeng Wang and Xiaotong Liu and Han-Wei Shen},
+  journal  = {{IEEE Transactions on Visualization and Computer Graphics (TVCG)}},
+  title    = {Multi-Resolution Climate Ensemble Parameter Analysis with Nested Parallel Coordinates Plots},
+  year     = {2017},
+  number   = {1},
+  pages    = {81--90},
+  volume   = {23},
+  abstract = {Due to the uncertain nature of weather prediction, climate simulations are usually performed multiple times with different spatial resolutions. The outputs of simulations are multi-resolution spatial temporal ensembles. Each simulation run uses a unique set of values for multiple convective parameters. Distinct parameter settings from different simulation runs in different resolutions constitute a multi-resolution high-dimensional parameter space. Understanding the correlation between the different convective pa- rameters, and establishing a connection between the parameter settings and the ensemble outputs are crucial to domain scientists. The multi-resolution high-dimensional parameter space, however, presents a unique challenge to the existing correlation visualization techniques. We present Nested Parallel Coordinates Plot (NPCP), a new type of parallel coordinates plots that enables visualization of intra-resolution and inter-resolution parameter correlations. With flexible user control, NPCP integrates superimposition, juxtaposi- tion and explicit encodings in a single view for comparative data visualization and analysis. We develop an integrated visual analytics system to help domain scientists understand the connection between multi-resolution convective parameters and the large spatial temporal ensembles. Our system presents intricate climate ensembles with a comprehensive overview and on-demand geographic details. We demonstrate NPCP, along with the climate ensemble visualization system, based on real-world use-cases from our collaborators in computational and predictive science.},
+  file     = {:pdfs/WangJ2017.pdf:PDF},
+  keywords = {Parallel coordinates, parameter analysis, multi-resolution, climate, ensembles, exploration},
+}
+
+@Article{Wu2017b,
+  author   = {K. Wu and Aaron Knoll and BJ Isaac and Hamish Carr and Valerio Pascucci},
+  journal  = {{IEEE Transactions on Visualization and Computer Graphics (TVCG)}},
+  title    = {Direct multifield volume ray casting of fiber surfaces},
+  year     = {2017},
+  number   = {1},
+  pages    = {941--949},
+  volume   = {23},
+  abstract = {Multifield data are common in visualization. However, reducing these data to comprehensible geometry is a challenging problem. Fiber surfaces, an analogy of isosurfaces to bivariate volume data, are a promising new mechanism for understanding multifield volumes. In this work, we explore direct ray casting of fiber surfaces from volume data without any explicit geometry extraction. We sample directly along rays in domain space, and perform geometric tests in range space where fibers are defined, using a signed distance field derived from the control polygons. Our method requires little preprocess, and enables real-time exploration of data, dynamic modification and pixel-exact rendering of fiber surfaces, and support for higher-order interpolation in domain space. We demonstrate this approach on several bivariate datasets, including analysis of multi-field combustion data.},
+  file     = {:pdfs/Wu2017b.pdf:PDF},
+}
+
+@InProceedings{Dey2016,
+  author    = {Tamal K. Dey and Facundo M\'{e}moli and Yusu Wang},
+  booktitle = {Proceedings of the 27th annual {ACM-SIAM} symposium on Discrete algorithms},
+  title     = {Mutiscale Mapper: A Framework for Topological Summarization of Data and Maps},
+  year      = {2016},
+  note      = {arXiv:1504.03763v1 [cs.CG] 15 Apr 2015},
+  pages     = {997-1013},
+  abstract  = {Summarizing topological information from datasets and maps defined on them is a central theme in topological data analysis. Mapper, a tool for such summarization, takes as input both a possibly high dimensional dataset and a map defined on the data, and produces a summary of the data by using a cover of the codomain of the map. This cover, via a pullback operation to the domain, produces a simplicial complex connecting the data points.
+The resulting view of the data through a cover of the codomain offers flexibility in analyzing the data. However, it offers only a view at a fixed scale at which the cover is constructed. Inspired by the concept, we explore a notion of hierarchical family of coverings which induces a hierarchical family of simplicial complexes connected by simplicial maps, which we call multiscale mapper. We study the resulting structure, its associated persistence module, and its stability under perturbations of the maps and the coverings. The information encoded in multiscale mapper complements that of individual mappers at fixed scales. An upshot of this development is a practical algorithm for computing the persistence diagram of multiscale mapper when the domain is a simplicial complex and the map is a real-valued piecewise-linear function.},
+  file      = {:pdfs/Dey2016.pdf:PDF},
+}
+
+@InProceedings{Iuricich2016,
+  author    = {Federico Iuricich and Sara Scaramuccia and Claudia Landi and Leila De Floriani},
+  booktitle = {Siggraph Asia, Symposium on Visualizaiton},
+  title     = {A discrete Mores-based apporach to multivariate data analysis},
+  year      = {2016},
+  number    = {5},
+  pages     = {1--8},
+  abstract  = {he Hurricane dataset is a multivariate dataset defined on a cubical grid. Here we are considering two values per point describing the temperature and the pressure above ground. For each function, we are showing the function gradient computed on the original scalar values. Then, critical cells obtained with our method are collected in clusters called extrema-clusters. Using the extrema-clusters and their size (number of voxels composing each cluster) we provide an interactive method for filtering out uninteresting regions. The extrema-clusters are shown in the lower part. For each image, only the clusters bigger than the indicated size are shown. The color scheme is based on the cluster's size. Comparing the function gradients with the clusters obtained we notice that bigger clusters are created where the gradient disagree, for example in the eye of the hurricane.},
+  file      = {:pdfs/Iuricich2016.pdf:PDF},
+  keywords  = {multi-variate, persistent homology, segmentation},
+}
+
+@Article{Klacansky2016,
+  author    = {Klacansky, Pavol and Tierny, Julien and Hamish Carr and Geng, Zhao},
+  journal   = {IEEE transactions on visualization and computer graphics},
+  title     = {Fast And Exact Fiber Surfaces For Tetrahedral Meshes},
+  year      = {2016},
+  number    = {7},
+  pages     = {1782--1795},
+  volume    = {23},
+  abstract  = {Isosurfaces are fundamental geometrical objects for the analysis and visualization of volumetric scalar fields. Recent work has generalized them to bivariate volumetric fields with fiber surfaces, the pre-image of polygons in range space. However, the existing algorithm for their computation is approximate, and is limited to closed polygons. Moreover, its runtime performance does not allow instantaneous updates of the fiber surfaces upon user edits of the polygons. Overall, these limitations prevent a reliable and interactive exploration of the space of fiber surfaces. This paper introduces the first algorithm for the exact computation of fiber surfaces in tetrahedral meshes. It assumes no restriction on the topology of the input polygon, handles degenerate cases and better captures sharp features induced by polygon bends. The algorithm also allows visualization of individual fibers on the output surface, better illustrating their relationship with data features in range space. To enable truly interactive exploration sessions, we further improve the runtime performance of this algorithm. In particular, we show that it is trivially parallelizable and that it scales nearly linearly with the number of cores. Further, we study acceleration data-structures both in geometrical domain and range space and we show how to generalize interval trees used in isosurface extraction to fiber surface extraction. Experiments demonstrate the superiority of our algorithm over previous work, both in terms of accuracy and running time, with up to two orders of magnitude speedups. This improvement enables interactive edits of range polygons with instantaneous updates of the fiber surface for exploration purpose. A VTK-based reference implementation is provided as additional material to reproduce our results.},
+  file      = {:pdfs/Klacansky2016.pdf:PDF},
+  keywords  = {tensor, fiber surfaces, Iso surface, continuous scatterplot, segmentation},
+  publisher = {IEEE},
+}
+
+@Article{Munch2016,
+  author   = {Elizabeth Munch and Bei Wang},
+  title    = {Convergence between Categorical Representations of Reeb Space and Mapper},
+  year     = {2016},
+  abstract = {The Reeb space, which generalizes the notion of a Reeb graph, is one of the few tools in topological data analysis and visualization suitable for the study of multivariate scientific datasets. First introduced by Edelsbrunner et al., it compresses the components of the level sets of a multivariate mapping and obtains a summary representation of their relationships. A related construction called mapper, and a special case of the mapper construction called the Joint Contour Net have been shown to be effective in visual analytics. Mapper and JCN are intuitively regarded as discrete approximations of the Reeb space, however without formal proofs or approximation guarantees. An open question has been proposed by Dey et al. as to whether the mapper construction converges to the Reeb space in the limit.
+In this paper, we are interested in developing the theoretical understanding of the relationship between the Reeb space and its discrete approximations to support its use in practical data analysis. Using tools from category theory, we formally prove the convergence between the Reeb space and mapper in terms of an interleaving distance between their categorical representations. Given a sequence of refined discretizations, we prove that these approximations converge to the Reeb space in the interleaving distance; this also helps to quantify the approximation quality of the discretization at a fixed resolution.},
+  file     = {:pdfs/Munch2016.pdf:PDF},
+  keywords = {topolgy, TDA,},
+  read     = {1},
+}
+
+@Article{Sakurai2016,
+  author   = {Daisuke Sakurai and Osamu Saeki and Hamish Carr and Hsiang-Yun Wu and Takahiro Yamamoto and David Duke and Shigeo Takahashi},
+  journal  = {{IEEE Transactions on Visualization and Computer Graphics (TVCG)}},
+  title    = {Interactive Visualization for Singular Fibers of Functions f:R3->R2},
+  year     = {2016},
+  number   = {1},
+  pages    = {945--954},
+  volume   = {22},
+  abstract = {Scalar topology in the form of Morse theory has provided computational tools that analyze and visualize data from scientific and engineering tasks. Contracting isocontours to single points encapsulates variations in isocontour connectivity in the Reeb graph. For multivariate data, isocontours generalize to fibers---inverse images of points in the range, and this area is therefore known as fiber topology. However, fiber topology is less fully developed than Morse theory, and current efforts rely on manual visualizations. This paper presents how to accelerate and semi-automate this task through an interface for visualizing fiber singularities of multivariate functions R3→R2 . This interface exploits existing conventions of fiber topology, but also introduces a 3D view based on the extension of Reeb graphs to Reeb spaces. Using the Joint Contour Net, a quantized approximation of the Reeb space, this accelerates topological visualization and permits online perturbation to reduce or remove degeneracies in functions under study. Validation of the interface is performed by assessing whether the interface supports the mathematical workflow both of experts and of less experienced mathematicians.},
+  doi      = {DOI: 10.1109/TVCG.2015.2467433},
+  file     = {:pdfs/Sakurai2016.pdf:PDF},
+  keywords = {fiber, singular fiber, Bivariate field analysis, topology},
+}
+
+@Article{Bhatia2015,
+  author     = {Harsh Bhatia and Bei Wang and Gregory Norgard and Valerio Pascucci and Peer-Timo Bremer},
+  journal    = {Computational Geometry: Theory and Applications (CGTA)},
+  title      = {Local, Smooth, and Consistent {Jacobi} Set Simplification},
+  year       = {2015},
+  number     = {4},
+  pages      = {311-332},
+  volume     = {48},
+  abstract   = {The relation between two Morse functions defined on a smooth, compact, and orientable 2-manifold can be studied in terms of their Jacobi set. The Jacobi set contains points in the domain where the gradients of the two functions are aligned. Both the Jacobi set itself as well as the segmentation of the domain it induces, have shown to be useful in various applications. In practice, unfortunately, functions often contain noise and discretization artifacts, causing their Jacobi set to become unmanageably large and complex. Although there exist techniques to simplify Jacobi sets, they are unsuitable for most applications as they lack fine-grained control over the process, and heavily restrict the type of simplifications possible.
+This paper introduces the theoretical foundations of a new simplification framework for Jacobi sets. We present a new interpretation of Jacobi set simplification based on the perspective of domain segmentation. Generalizing the cancellation of critical points from scalar functions to Jacobi sets, we focus on simplifications that can be realized by smooth approximations of the corresponding functions, and show how these cancellations imply simultaneous simplification of contiguous subsets of the Jacobi set. Using these extended cancellations as atomic operations, we introduce an algorithm to successively cancel subsets of the Jacobi set with minimal modifications to some user-defined metric. We show that for simply connected domains, our algorithm reduces a given Jacobi set to its minimal configuration, that is, one with no birth--death points (a birth--death point is a specific type of singularity within the Jacobi set where the level sets of the two functions and the Jacobi set have a common normal direction).},
+  bdsk-url-1 = {https://dx.doi.org/10.1016/j.comgeo.2014.10.009},
+  file       = {:pdfs/Bhatia2015.pdf:PDF},
+  keywords   = {Jacobi set},
+}
+
+@Article{Carr2015,
+  author   = {Hamish Carr and Zhao Geng and Julien Tierny and Amit Chattopadhyay and Aron Knoll},
+  journal  = {{Computer Graphics Forum}},
+  title    = {Fiber Surfaces: Generalizing Isosurfaces to Bivariate Data},
+  year     = {2015},
+  number   = {3},
+  pages    = {241--250},
+  volume   = {34},
+  abstract = {Scientific visualization has many effective methods for examining and exploring scalar and vector fields, but rather fewer for bivariate fields. We report the first general purpose approach for the interactive extraction of geometric separating surfaces in bivariate fields. This method is based on fiber surfaces: surfaces constructed from sets of fibers, the multivariate analogues of isolines. We show simple methods for fiber surface definition and extraction. In particular, we show a simple and efficient fiber surface extraction algorithm based on Marching Cubes. We also show how to construct fiber surfaces interactively with geometric primitives in the range of the function. We then extend this to build user interfaces that generate parameterized families of fiber surfaces with respect to arbitrary polygons. In the special case of isovalue-gradient plots, fiber surfaces capture features geometrically for quantitative analysis that have previously only been analysed visually and qualitatively using multi-dimensional transfer functions in volume rendering. We also demonstrate fiber surface extraction on a variety of bivariate data.},
+  file     = {:pdfs/Carr2015.pdf:PDF},
+  keywords = {Iso surface, multi-field, topology, reeb spaces, fiber surface},
+}
+
+@InProceedings{Huettenberger2015,
+  author    = {Huettenberger, Lars and Feige, Nils and Ebert, Achim and Garth, Christoph},
+  booktitle = {{IEEE} {Pacific} {Visualization} {Symposium} ({PacificVis})},
+  title     = {Application of {Pareto} sets in quality control of series production in car manufacturing},
+  year      = {2015},
+  pages     = {135--139},
+  abstract  = {In car manufacturing, quality management and control are important parts of the series process. In series production, many parts are controlled in various ways in some or all stages of assembly. While tactile measurements are mostly restricted to the points on an inspection plan, this restriction does not apply to optical measurements. We propose a method based on the theory of Pareto sets (multivariate topological analysis) to cope with the large amount of data produced by optical measurements and to find points of interest on the measured surface in addition to the inspection plan. We describe a method which automatically detects areas of systematic errors on a component and visualizes them on the triangulated surface. The visualization can help experts to decide, whether a detected feature is severe enough to be added to the inspection plan.},
+  doi       = {10.1109/PACIFICVIS.2015.7156369},
+  file      = {:pdfs/Huettenberger2015.pdf:PDF},
+}
+
+@incollection{Huettenberger2015ab,
+	abstract = {Topological analysis of multifields is an approaches to find meaningful, intrinsic structures in complex data. Methods introduced in previous years were usually evaluated separately or rather informally. However, to aid the decision which method is best suited for a particular kind of data, it is important to compare and put them into context with each other. Using results from optimization mathematics, this paper finds subset and equivalence relations between Jacobi Sets and Pareto Sets and indicates even further relations to Morse decomposition. This is a first step towards the creation of new analysis tools for multifield topology and of new insight about how the topological approaches are connected with each other.},
+	author = {Huettenberger, Lars and Garth, Christoph},
+	booktitle = {Topological and {Statistical} {Methods} for {Complex} {Data}},
+	editor = {Bennett, Janine and Vivodtzev, Fabien and Pascucci, Valerio},
+	keywords = {Pareto Set, Jacobi set, topology},
+	pages = {125--141},
+	publisher = {Springer},
+	series = {Mathematics and Visualization},
+	title = {A {Comparison} of {Pareto} {Sets} and {Jacobi} {Sets}},
+	year = {2015}}
+
+@InProceedings{Widanagamaachchi2015,
+  author    = {Wathsala Widanagamaachchi and P. Klacansky and Hemanth Kolla and A. Bhagatwala and Jacqueline Chen and Valerio Pascucci and Peer-Timo Bremer},
+  booktitle = {{IEEE} Symposium on Large-Scale Data Analysis and Visualization ({LDAV}'15)},
+  title     = {Tracking features in embedded surfaces: Understanding extinction in turbulent combustion},
+  year      = {2015},
+  pages     = {9--16},
+  abstract  = {Understanding the temporal evolution of features of interest requires the ability to: (i) extract features from each snapshot; (ii) correlate them over time; and (iii) understand the resulting tracking graph. This paper provides new solutions for the last two chal- lenges in the context of large-scale turbulent combustion simula- tions. In particular, we present a simple and general algorithm to correlate hierarchical features, embedded in time-dependent sur- faces. This, for the first time, provides a parameter independent approach to track embedded features. Furthermore, we provide a new technique to adaptively change feature parameters over time to both: alleviate artifacts due to insufficient temporal resolution as well as to simplify the resulting tracking graphs to promote new scientific insights. Our solutions are integrated into a general and flexible analysis environment that allows users to interactively ex- plore the spatio-temporal behavior of large-scale simulations. We demonstrate the results using the analysis of extinction holes in tur- bulent combustion as primary case study and a number of other applications to illustrate the generality of the approach.},
+  file      = {:pdfs/Widanagamaachchi2015.pdf:PDF},
+  keywords  = {large-scale, turbulence, combustion, temporal evolution, tracking,},
+}
+
+@book{Hansen2014,
+	abstract = {
+Scientific Visualization is the transformation of abstract data, derived from observation or simulation, into readily comprehensible images, and has proven to play an indispensable part of the scientific discovery process in many fields of contemporary science. Since its inception two decades ago, the techniques of Scientific Visualization have aided scientists, engineers, medical practitioners, and others in the study of a wide variety of data sets including, for example, high- performance computing simulations, measured data from scanners (CAT, MR, confocal microscopy), Internet traffic, and financial records. One of the important themes being nurtured under the aegis of Scientific Visualization is the utilization of the broad bandwidth of the human sensory system in steering and interpreting complex processes and simulations involving voluminous data sets across diverse scientific disciplines. Since vision dominates our sensory input, strong efforts have been made to bring the mathematical abstraction and modeling to our eyes through the mediation of computer graphics.
+In June 2011, we organized a Dagstuhl seminar, with 54 participants, that focused on the four parts of this book. The seminar comprised talks from leaders in the field and breakout sessions on the four specific topics: Uncertainty Visualization, Multifield Visualization, Biomedical Visualization, and Scalable Visualization. This book is a culmination of the four topics with contributed chapters from the participants for each of the four parts of the book.
+We would like to thank all of the authors for their thoughtful and insightful contributed chapters. We would also like to thank Catherine Waite and Lynn Brandon from Springer UK for their assistance and patience in generating this book.
+Based on the seminar that took place in Dagstuhl, Germany in June 2011, this contributed volume studies the four important topics within the scientific visualization field: uncertainty visualization, multifield visualization, biomedical visualization and scalable visualization.
+* Uncertainty visualization deals with uncertain data from simulations or sampled data, uncertainty due to the mathematical processes operating on the data, and uncertainty in the visual representation,
+* Multifield visualization addresses the need to depict multiple data at individual locations and the combination of multiple datasets,
+* Biomedical is a vast field with select subtopics addressed from scanning methodologies to structural applications to biological applications,
+* Scalability in scientific visualization is critical as data grows and computational devices range from hand-held mobile devices to exascale computational platforms.
+Scientific Visualization will be useful to practitioners of scientific visualization, students interested in both overview and advanced topics, and those interested in knowing more about the visualization process.
+},
+	author = {multiple authors},
+	editor = {Charles D. Hansen and Min Chen and C. R. Johnson and Arie E. Kaufman and Hans Hagen},
+	keywords = {star, multi-field, uncertainty, Biomedical, scalable},
+	publisher = {Springer},
+	series = {Mathematics and Visualization},
+	title = {Scientific Visualization: Uncertainty, Multifield, Biomedical, and Scalable Visualization},
+	year = {2014}}
+
+@InCollection{Carr2014b,
+  author     = {Hamish Carr},
+  booktitle  = {Scientific Visualization: Uncertainty, Multifield, Biomedical, and Scalable Visualization},
+  publisher  = {Springer},
+  title      = {Feature Analysis in Multifields},
+  year       = {2014},
+  editor     = {Charles D. Hansen and Min Chen and C. R. Johnson and Arie E. Kaufman and Hans Hagen},
+  pages      = {189--196},
+  series     = {Mathematics and Visualization},
+  abstract   = {As with individual fields, one approach to visualizing multifields is to analyze the field and identify features. While some work has been carried out in detecting features in multifields, any discussion of multifield analysis must also identify techniques from single fields that can be extended appropriately.},
+  bdsk-url-1 = {https://doi.org/10.1007/978-1-4471-6497-5_18},
+  doi        = {doi: 10.1007/978-1-4471-6497-5_18},
+  keywords   = {multi-field, feature extraction},
+}
+
+@Article{Carr2014,
+  author   = {Hamish Carr and Duke, David},
+  journal  = {{IEEE} Transactions On Visualization And Computer Graphics},
+  title    = {Joint Contour Nets},
+  year     = {2014},
+  number   = {8},
+  pages    = {1100--13},
+  volume   = {20},
+  abstract = {Contour Trees and Reeb Graphs are firmly embedded in scientific visualization for analysing univariate (scalar) fields. We generalize this analysis to multivariate fields with a data structure called the Joint Contour Net that quantizes the variation of multiple variables simultaneously. We report the first algorithm for constructing the Joint Contour Net, and demonstrate some of the properties that make it practically useful for visualisation, including accelerating computation by exploiting a relationship with rasterisation in the range of the function.},
+  file     = {:pdfs/Carr2014.pdf:PDF},
+  keywords = {computational topology, controur analysis, contour tree, Reeb graph, multi-variate},
+}
+
+@inproceedings{Chattopadhyay2014,
+	abstract = {Jacobi sets have been identified as significant in multi-field topological analysis, but are defined in the domain of the data rather than in the Reeb Space. This distinction is significant, as exploiting multi-field topology actually depends on the projection of the Jacobi set into the Reeb Space, and the details of its internal structure. We therefore introduce the Jacobi Structure of a Reeb Space which describes this, explain its relationships with both the Jacobi Set and Fiber Analysis in mathematical topology, give an algorithm for computing the Jacobi Structure recursively using a Multi-Dimensional Reeb Graph and illustrate it using an early implementation in VTK.},
+	author = {Amit Chattopadhyay and Hamish Carr and Duke, David and Geng, Zhao},
+	booktitle = {{EuroVis} - {Short} {Papers}},
+	doi = {10.2312/eurovisshort.20141156},
+	editor = {Elmqvist, N. and Hlawitschka, M. and Kennedy, J.},
+	isbn = {978-3-905674-69-9},
+	keywords = {Topological analysis, Multi-Field, Reeb space, Jacobi set, Multi-Dimensional Reeb Graph, JCN},
+	publisher = {The Eurographics Association},
+	title = {Extracting {Jacobi} {Structures} in {Reeb} {Spaces}},
+	year = {2014}}
+
+@InCollection{Hotz2014,
+  author    = {Ingrid Hotz and Ronald Peikert},
+  booktitle = {Scientific Visualization -- Uncertainty, Multifield, Biomedical, and Scalable Visualization},
+  publisher = {Springer},
+  title     = {Definition of a Multifield},
+  year      = {2014},
+  chapter   = {10},
+  pages     = {105--109},
+  series    = {Mathematics and Visualization},
+  abstract  = {A challenge, visualization is often faced with, is the complex structure
+	of scientific data. Complexity can arise in various ways, from high
+	dimensionalities of domains and ranges, time series of measurements,
+	ensemble simulations, to heterogeneus collections of data, such as
+	combinations of measured and simulated data. Many of these complexities
+	can be subsumed under a concept of multifields, and in fact, multifield
+	visualization has been identified as one of the major current chal-
+	lenges in scientific visualization. In this chapter, we propose a
+	multifield definition, which will allow us a systematic approach
+	to discussing related research.},
+  file      = {:pdfs/Hotz2014.pdf:PDF},
+  keywords  = {foundations, multi-field},
+}
+
+@Article{Huettenberger2014,
+  author   = {Lars Huettenberger and Christian Heine and Christoph Garth},
+  journal  = {IEEE Transaction on Visualization and Computer Graphics},
+  title    = {Decomposition and Simplification of Multivariate Data using Pareto Sets},
+  year     = {2014},
+  number   = {12},
+  pages    = {2684--2693},
+  volume   = {20},
+  abstract = {Topological and structural analysis of multivariate data is aimed
+	at improving the understanding and usage of such data through identification
+	of intrinsic features and structural relationships among multiple
+	variables. We present two novel methods for simplifying so-called
+	Pareto sets that describe such structural relationships. Such simplification
+	is a precondition for meaningful visualization of structurally rich
+	or noisy data. As a framework for simplification operations, we introduce
+	a decomposition of the data domain into regions of equivalent structural
+	behavior and the reachability graph that describes global connectivity
+	of Pareto extrema. Simplification is then performed as a sequence
+	of edge collapses in this graph; to determine a suitable sequence
+	of such operations, we describe and utilize a comparison measure
+	that reflects the changes to the data that each operation represents.
+	We demonstrate and evaluate our methods on synthetic and real-world
+	examples.},
+  file     = {:pdfs/Huettenberger2014.pdf:PDF},
+  keywords = {multi-variate, topology, Pareto Set, Simplification, Decomposition},
+}
+
+@InCollection{Obermaier2014,
+  author    = {Harald Obermaier and Ronald Peikert},
+  booktitle = {Scientific Visualization: Uncertainty, Multifield, Biomedical, and Scalable Visualization},
+  publisher = {Springer},
+  title     = {Feature-Based Visualization of Multifields},
+  year      = {2014},
+  chapter   = {17},
+  editor    = {Charles D. Hansen and Min Chen and C. R. Johnson and Arie E. Kaufman and Hans Hagen},
+  pages     = {189--196},
+  series    = {Mathematics and Visualization},
+  abstract  = {Feature-based techniques are one of the main categories of methods used in scientific visualization. Features are structures in a dataset that are meaningful within the scientific or engineering context of the dataset. Extracted features can be visualized directly, or they can be used indirectly for modifying another type of visualization. In multifield data, each of the component fields can be searched for features, but in addition, there can be features of the multifield which rely on information form several of its components and which cannot be found by searching in a single field. In this chapter we give a survey of feature-based visualization of multifields, taking both of these feature types into account.},
+  doi       = {doi: 10.1007/978-1-4471-6497-5_17},
+  file      = {:pdfs/Obermaier2014.pdf:PDF},
+  keywords  = {multi-field, feature extraction},
+}
+
+@Article{Duffy2013,
+  author     = {B. Duffy and Hamish Carr and T. Moller},
+  journal    = {{IEEE} Transactions on Visualization and Computer Graphics},
+  title      = {{Integrating Isosurface Statistics and Histograms}},
+  year       = {2013},
+  issn       = {1077-2626},
+  number     = {2},
+  pages      = {263-277},
+  volume     = {19},
+  abstract   = {Many data sets are sampled on regular lattices in two, three or more
+	dimensions, and recent work has shown that statistical properties
+	of these data sets must take into account the continuity of the underlying
+	physical phenomena. However, the effects of quantization on the statistics
+	have not yet been accounted for. This paper therefore reconciles
+	the previous papers to the underlying mathematical theory, develops
+	a mathematical model of quantized statistics of continuous functions,
+	and proves convergence of geometric approximations to continuous
+	statistics for regular sampling lattices. In addition, the computational
+	cost of various approaches is considered, and recommendations made
+	about when to use each type of statistic.},
+  address    = {Los Alamitos, CA, USA},
+  bdsk-url-1 = {http://doi.ieeecomputersociety.org/10.1109/TVCG.2012.118},
+  doi        = {http://doi.ieeecomputersociety.org/10.1109/TVCG.2012.118},
+  file       = {:pdfs/Duffy2013.pdf:PDF},
+  keywords   = {quantization, statistics, continuous functions, histogram, isosurface},
+  project    = {Tensor continuous scatterplott; bivariate STAR},
+  publisher  = {IEEE Computer Society},
+}
+
+@Article{Huettenberger2013,
+  author   = {Lars Huettenberger and Christian Heine and Hamish Carr and Gerik Scheuermann and Christoph Garth},
+  journal  = {Computer Graphics Forum},
+  title    = {Towards Multifield Scalar Topology Based on Pareto Optimality},
+  year     = {2013},
+  number   = {3},
+  pages    = {341--350},
+  volume   = {32},
+  abstract = {How can the notion of topological structures for single scalar fields
+	be extended to multifields? In this paper we propose a definition
+	for such structures using the concepts of Pareto optimality and Pareto
+	dominance. Given a set of piecewise-linear, scalar functions over
+	a common simplical complex of any dimension, our method finds regions
+	of ``consensus'' among single fields critical points and their connectivity
+	relations. We show that our concepts are useful to data analysis
+	on real-world examples originating from fluid-flow simulations; in
+	two cases where the consensus of multiple scalar vortex predictors
+	is of interest and in another case where one predictor is studied
+	under different simulation parameters. We also compare the properties
+	of our approach with current alternatives.},
+  file     = {:pdfs/Huettenberger2013.pdf:PDF},
+  keywords = {multi-field, Pareto Set, Topology},
+}
+
+@Article{Schneider2013,
+  author     = {Schneider, Dominic and Heine, Christian and Hamish Carr and Gerik Scheuermann},
+  journal    = {Computer Aided Geometric Design},
+  title      = {Interactive comparison of multifield scalar data based on largest contours},
+  year       = {2013},
+  issn       = {0167-8396},
+  number     = {6},
+  pages      = {521--528},
+  volume     = {30},
+  bdsk-url-1 = {https//doi.org/10.1016/j.cagd.2012.03.023},
+  doi        = {10.1016/j.cagd.2012.03.023},
+  file       = {:pdfs/Schneider2013.pdf:PDF},
+}
+
+@Article{Duke2012,
+  author   = {Duke, D. and Hamish Carr and Knoll, A. and Schunck, N. and Nam, Hai Ah and Staszczak, A.},
+  journal  = {IEEE Trans. Vis. Comput. Graph.},
+  title    = {Visualizing {Nuclear} {Scission} through a {Multifield} {Extension} of {Topological} {Analysis}},
+  year     = {2012},
+  issn     = {1077-2626},
+  number   = {12},
+  pages    = {2033--2040},
+  volume   = {18},
+  abstract = {In nuclear science, density functional theory (DFT) is a powerful tool to model the complex interactions within the atomic nucleus, and is the primary theoretical approach used by physicists seeking a better understanding of fission. However DFT simulations result in complex multivariate datasets in which it is difficult to locate the crucial `scission' point at which one nucleus fragments into two, and to identify the precursors to scission. The Joint Contour Net (JCN) has recently been proposed as a new data structure for the topological analysis of multivariate scalar fields, analogous to the contour tree for univariate fields. This paper reports the analysis of DFT simulations using the JCN, the first application of the JCN technique to real data. It makes three contributions to visualization: (i) a set of practical methods for visualizing the JCN, (ii) new insight into the detection of nuclear scission, and (iii) an analysis of aesthetic criteria to drive further work on representing the JCN.},
+  doi      = {10.1109/TVCG.2012.287},
+  file     = {:pdfs/Duke2012.pdf:PDF},
+}
+
+@Article{Rieck2012,
+  author   = {B. Rieck and H. Mara and Heike Leitte},
+  journal  = {{IEEE} Transactions On Visualization And Computer Graphics (Vis/12)},
+  title    = {Multivariate Data Analysis Using Persistence-based Filtering and Topological Signatures},
+  year     = {2012},
+  number   = {12},
+  pages    = {2382--2391},
+  volume   = {18},
+  abstract = {The extraction of significant structures in arbitrary high-dimensional data sets is a challenging task. Moreover, classifying data points as noise in order to reduce a data set bears special relevance for many application domains. Standard methods such as clustering serve to reduce problem complexity by providing the user with classes of similar entities. However, they usually do not highlight relations between different entities and require a stopping criterion, e.g. the number of clusters to be detected. In this paper, we present a visualization pipeline based on recent advancements in algebraic topology. More precisely, we employ methods from persistent homology that enable topological data analysis on high-dimensional data sets. Our pipeline inherently copes with noisy data and data sets of arbitrary dimensions. It extracts central structures of a data set in a hierarchical manner by using a persistence-based filtering algorithm that is theoretically well-founded. We furthermore introduce persistence rings, a novel visualization technique for a class of topological features---the persistence intervals---of large data sets. Persistence rings provide a unique topological signature of a data set, which helps in recognizing similarities. In addition, we provide interactive visualization techniques that assist the user in evaluating the parameter space of our method in order to extract relevant structures. We describe and evaluate our analysis pipeline by means of two very distinct classes of data sets: First, a class of synthetic data sets containing topological objects is employed to highlight the interaction capabilities of our method. Second, in order to affirm the utility of our technique, we analyse a class of high-dimensional real-world data sets arising from current research in cultural heritage.},
+  file     = {:pdfs/Rieck2012.pdf:PDF},
+  keywords = {Topological persistence, multi-variate, clustering},
+}
+
+@book{Pascucci2011,
+	author = {multiple authors},
+	editor = {Valerio Pascucci and Xavier Tricoche and Hans Hagen and Julien Tierny},
+	publisher = {Springer},
+	series = {Mathematics and Visualization},
+	title = {Topological Methods in Data Analysis and Visualization, Theory, Algorithms, and Applicaitons},
+	year = {2011}}
+
+@InCollection{Chung2011,
+  author    = {David. H.S. Chung and Robert. S. Laramee and Johannes Kehrer and Helwig Hauser and Min Chen},
+  booktitle = {Scientific Visualization: Uncertainty, Multifield, Biomedical, and Scalable Visualization},
+  publisher = {Springer},
+  title     = {Glyph-Based Multifield Visualization},
+  year      = {2011},
+  abstract  = {The visualization of data that are given as fields of values is a classical topic in vi- sualization research. A substantial amount of relevant work has been done, offering a wealth of well-proven techniques for revealing insight into such data fields. When visualizing multiple fields of data that co-exist with respect to a joint domain of ref- erence, additional challenges are faced. One the one hand, there is a technological challenge of how to realize a visualization mapping that can reveal multiple fields of data at a time. On the other hand, there is a perceptual challenge of how easy it is to understand and correctly interpret such a visualization.
+Glyph-based visualization is one possible approach to realize such a visualiza- tion of multi-field data (and other chapters of this book part describe alternative approaches). A parameterized visualization object is considered -- called a glyph (or sometimes also an icon) -- such that certain specifics with respect to its form, e.g., its shape, color, size/orientation, texture, etc., are given according to data values which this glyph should represent. A glyph-based visualization is then created by arrang- ing a certain number of these glyphs across the domain of reference (these could be just a few, or just one, or many, even so many that they merge into a dense visual-},
+  file      = {:pdfs/Chung2011.pdf:PDF},
+}
+
+@Article{Claessen2011,
+  author   = {Jarry H.T. Claessen and Jarke J. van Wijk},
+  journal  = {Transactions on Computer Graphics and Visualization (VisWeek'11)},
+  title    = {Flexible Linked Axes for Multivariate Data Visualizations},
+  year     = {2011},
+  number   = {12},
+  pages    = {2310--2316},
+  volume   = {17},
+  abstract = {Multivariate data visualization is a classic topic, for which many
+	solutions have been proposed, each with its own strengths and weaknesses.
+	In standard solutions the structure of the visualization is fixed,
+	we explore how to give the user more freedom to define visualizations.
+	Our new approach is based on the usage of Flexible Linked Axes: The
+	user is enabled to define a visualization by drawing and linking
+	axes on a canvas. Each axis has an associated attribute and range,
+	which can be adapted. Links between pairs of axes are used to show
+	data in either scatterplot- or Parallel Coordinates Plot-style. Flexible
+	Linked Axes enable users to define a wide variety of different visualizations.
+	These include standard methods, such as scatterplot matrices, radar
+	charts, and PCPs [11]; less well known approaches, such as Hyperboxes
+	[1], TimeWheels [17], and many-to-many relational parallel coordinate
+	displays [14]; and also custom visualizations, consisting of combinations
+	of scatterplots and PCPs. Furthermore, our method allows users to
+	define composite visualizations that automatically support brushing
+	and linking. We have discussed our approach with ten prospective
+	users, who found the concept easy to understand and highly promising.},
+  file     = {:pdfs/Claessen2011.pdf:PDF},
+}
+
+@Article{Heinrich2011,
+  author   = {J. Heinrich and Sven Bachthaler and Daniel Weiskopf},
+  journal  = {{Computer Graphics Forum}},
+  title    = {Progressive Splatting of Continuous Scatterplots and Parallel Coordinates},
+  year     = {2011},
+  number   = {3},
+  volume   = {30},
+  abstract = {Continuous scatterplots and parallel coordinates are used to visualize multivariate data defined on a continu- ous domain. With the existing techniques, rendering such plots becomes prohibitively slow, especially for large scientific datasets. This paper presents a scalable and progressive rendering algorithm for continuous data plots that allows exploratory analysis of large datasets at interactive framerates. The algorithm employs splatting to produce a series of plots that are combined using alpha blending to achieve a progressively improving image. For each individual frame, splats are obtained by transforming Gaussian density kernels from the 3-D domain of the input dataset to the respective data domain. A closed-form analytic description of the resulting splat footprints is derived to allow pre-computation of splat textures for efficient GPU rendering. The plotting method is versatile because it supports arbitrary reconstruction or interpolation schemes for the input data and the splatting tech- nique is scalable because it chooses splat samples independently from the size of the input dataset. Finally, the effectiveness of the method is compared to existing techniques regarding rendering performance and quality.},
+  file     = {:pdfs/Heinrich2011.pdf:PDF},
+  keywords = {scatter plot, parallel coordinates, splatting},
+}
+
+@Article{Nagaraj2011,
+  author   = {S. Nagaraj and Vijay Natarajan},
+  journal  = {{IEEE Transactions on Visualization and Computer Graphics (TVCG)}},
+  title    = {Relation-Aware Isosurface Extraction in Multifield Data},
+  year     = {2011},
+  number   = {2},
+  pages    = {182--191},
+  volume   = {17},
+  abstract = {We introduce a variation density function that profiles the relationship between multiple scalar fields over isosurfaces of a given scalar field. This profile serves as a valuable tool for multifield data exploration because it provides the user with cues to identify interesting isovalues of scalar fields. Existing isosurface-based techniques for scalar data exploration like Reeb graphs, contour spectra, isosurface statistics, etc., study a scalar field in isolation. We argue that the identification of interesting isovalues in a multifield data set should necessarily be based on the interaction between the different fields. We demonstrate the effectiveness of our approach by applying it to explore data from a wide variety of applications.},
+  file     = {:pdfs/Nagaraj2011.pdf:PDF},
+  keywords = {multi field, Iso surface},
+}
+
+@incollection{Nagaraj2011b,
+	abstract = {The Jacobi set of two Morse functions defined on a 2-manifold is the collection of points where the gradients of the functions align with each other or where one of the gradients vanish. It describes the relation- ship between functions defined on the same domain, and hence plays an important role in multi-field visualization. The Jacobi set of two piece- wise linear functions may contain several components indicative of noisy or a feature-rich dataset. We pose the problem of simplification as the extraction of level sets and offset contours and describe an algorithm to compute and simplify Jacobi sets in a robust manner.
+},
+	author = {Suthambhara, Nagaraj and Natarajan, Vijay},
+	booktitle = {Topological Methods in Data Analysis and Visualization},
+	doi = {10.1007/978-3-642-15014-2_8},
+	editor = {Pascucci, Valerio and Tricoche, Xavier and Hagen, Hans and Tierny, Julien},
+	isbn = {978-3-642-15013-5},
+	keywords = {Jacobi set},
+	pages = {91--102},
+	publisher = {Springer Berlin Heidelberg},
+	series = {Mathematics and {Visualization}},
+	title = {Simplification of {Jacobi} {Sets}},
+	year = {2011}}
+
+@Article{Suthambhara2011b,
+  author   = {Nagaraj Suthambhara and Vijay Natarajan and Ravi S. Nanjundiah},
+  journal  = {Computer Graphics Forum},
+  title    = {A Gradient-Based Comparison Measure for Visual analysis of Multifield Data},
+  year     = {2011},
+  number   = {3},
+  pages    = {1101--1110},
+  volume   = {30},
+  abstract = {We introduce a multifield comparison measure for scalar fields that helps in studying relations between them. The comparison measure is insensitive to noise in the scalar fields and to noise in their gradients. Further, it can be computed robustly and efficiently. Results from the visual analysis of various data sets from climate science and combustion applications demonstrate the effective use of the measure.},
+  file     = {:pdfs/Suthambhara2011b.pdf:PDF},
+  keywords = {multi-field, gradient bsed, climate, simulation, comparative},
+}
+
+@Article{Buskin2010,
+  author   = {Stef Busking and Charl Botha and Frits H. Post},
+  journal  = {Computers \& Graphics},
+  title    = {Example-based interactive illustration of multi-field datasets},
+  year     = {2010},
+  pages    = {719--728},
+  volume   = {34},
+  abstract = {Multi-fields are widely used in areas ranging from physical simulations to medical imaging. Illustrative visualization techniques can help to effectively communicate features of interest found in a given field. Current techniques for multi-field visualization are mostly focused on showing subsets of local attributes such as single values or vector directions, e.g., using colors, texture, streamlines or glyphs. Instead, we present an approach based on highlighting areas with similar characteristics, considering all attributes of the field.
+Our approach is example-based and interactive. A user simply selects a point within the field, upon which the system automatically derives the characteristic combination of attributes for that point. Our system then automatically creates a visualization highlighting areas within the field which are similar to the example point with respect to these characteristics. The visualizations are presented using sparse, illustrative techniques, using contours and colors to clearly delineate and identify separate areas. Users can interact with the visualizations in real-time, by moving the example point or, optionally, by changing the characteristics or adjusting other parameters used to determine similarity.},
+  file     = {:pdfs/Buskin2010.pdf:PDF},
+  keywords = {multi-field, feature space, similarity, exploration, illustrative visualization},
+}
+
+@Article{Lehmann2010,
+  author   = {Dirk J. Lehmann and Holger Theisel},
+  journal  = {IEEE Transactions on Visualization and Computer Graphics (Vis'10)},
+  title    = {Discontinuities in Continuous Scatter plots},
+  year     = {2010},
+  number   = {6},
+  pages    = {1291--1301},
+  volume   = {16},
+  abstract = {The concept of continuous scatter plot (CSP) is a modern visualization
+	technique. The idea is to define a scalar density value based on
+	the map between an n-dimensional spatial domain and an m-dimensional
+	data domain, which describe the CSP space. Usually the data domain
+	is two-dimensional to visually convey the underlying, density coded,
+	data. In this paper we investigate kinds of map-based discontinuities,
+	especially for the practical cases n = m = 2 and n = 3 m = 2, and
+	we depict relations between them and attributes of the resulting
+	CSP itself. Additionally, we show that discontinuities build critical
+	line structures, and we introduce algorithms to detect them. Further,
+	we introduce a discontinuity-based visualization approach - called
+	contribution map (CM) - which establishes a relationship between
+	the CSP's data domain and the number of connected components in the
+	spatial domain. We show that CMs enhance the CSP-based linking &
+	brushing interaction. Finally, we apply our approaches to a number
+	of synthetic as well as real data sets.},
+  file     = {:pdfs/Lehmann2010.pdf:PDF},
+  keywords = {Discontinuity, Scatter plot, Topology, Visualization},
+}
+
+@Article{Bachthaler2009,
+  author   = {Sven Bachthaler and Daniel Weiskopf},
+  journal  = {{Computer Graphics Forum}},
+  title    = {Efficient and Adaptive Rendering of 2-D Continuous Scatterplots},
+  year     = {2009},
+  number   = {3},
+  volume   = {28},
+  abstract = {We extend the rendering technique for continuous scatterplots to allow for a broad class of interpolation methods within the spatial grid instead of only linear interpolation. To do this, we propose an approach that projects the image of a cell from the spatial domain to the scatterplot domain. We approximate this image using either the convex hull or an axis-aligned rectangle that forms a tight fit of the projected points. In both cases, the approach relies on subdivision in the spatial domain to control the approximation error introduced in the scatterplot domain. Acceleration of this algorithm in homogeneous regions of the spatial domain is achieved using an octree hierarchy. The algorithm is scalable and adaptive since it allows us to balance computation time and scatterplot quality. We evaluate and discuss the results with respect to accuracy and computational speed. Our methods are applied to examples of 2-D transfer function design.},
+  file     = {:pdfs/Bachthaler2009.pdf:PDF},
+  keywords = {Scatter plot, adaptive, transfer function},
+}
+
+@Article{Carlsson2009b,
+  author    = {Gunnar Carlsson and Afra Zomorodian},
+  journal   = {Discrete \& Computational Geometry},
+  title     = {{The Theory of Multidimensional Persistence}},
+  year      = {2009},
+  number    = {1},
+  pages     = {71--93},
+  volume    = {42},
+  abstract  = {Persistent homology captures the topology of a filtration -- a one-
+	parameter family of increasing spaces -- in terms of a complete discrete
+	invariant. This invariant is a multiset of intervals that denote
+	the lifetimes of the topological entities within the filtration.
+	In many applications of topology, we need to study a multifiltration:
+	a family of spaces parameterized along multiple geometric dimensions.
+	In this paper, we show that no similar complete discete invariant
+	exists for multidimensional persistence. Instead, we propose the
+	rank invariant, a discrete invariant for the robust estimation of
+	Betti numbers in a multifiltration, and prove its completeness in
+	one dimension.},
+  booktitle = {Discrete \& Computational Geometry},
+  file      = {:pdfs/Carlsson2009b.pdf:PDF},
+  keywords  = {computational topology, multi-dimensional, persistence, homology, TDA},
+}
+
+@Article{Fuchs2009,
+  author   = {Raphael Fuchs and Helwig Hauser},
+  journal  = {{Computer Graphics Forum}},
+  title    = {Visualization of Multi-Variate Scientific Data},
+  year     = {2009},
+  number   = {6},
+  pages    = {1670--1690},
+  volume   = {28},
+  abstract = {In this state-of-the-art report we discuss relevant research works related to the visualization of complex, multi-variate data. We discuss how different techniques take effect at specific stages of the visualization pipeline and how they apply to multi-variate data sets being composed of scalars, vectors and tensors. We also provide a categorization of these techniques with the aim for a better overview of related approaches. Based on this classification we highlight combinable and hybrid approaches and focus on techniques that potentially lead towards new directions in visualization research. In the second part of this paper we take a look at recent techniques that are useful for the visualization of complex data sets either because they are general purpose or because they can be adapted to specific problems.},
+  file     = {:pdfs/Fuchs2009.pdf:PDF},
+  keywords = {multi-field, STAR},
+}
+
+@Article{VanGelder2009,
+  author   = {Allen Van Gelder and Alex Pang},
+  journal  = {IEEE Transactions on Visualization and Computer Graphics},
+  title    = {Using PVsolve to Analyze and Locate Positions of Parallel Vectors},
+  year     = {2009},
+  abstract = {A new method for finding the locus of parallel vectors is presented, called PVsolve. A parallel-vector operator has been proposed as a visualization primitive, as several features can be expressed as the locus of points where two vector fields are parallel. Several applications of the idea have been reported, so accurate and efficient location of such points is an important problem. Previously published methods derive a tangent direction under the assumption that the two vector fields are parallel at the current point in space, then extend in that direction to a new point. PVsolve includes additional terms to allow for the fact that the two vector fields may not be parallel at the current point, and uses a root-finding approach. Mathematical analysis sheds new light on the feature flow field technique (FFF), as well. The root-finding property allows PVsolve to use larger step sizes for tracing parallel-vector curves, compared to previous methods, and does not rely on sophisticated differential equation techniques for accuracy. Experiments are reported on fluid flow simulations, comparing FFF and PVsolve.},
+  file     = {:pdfs/VanGelder2009.pdf:PDF},
+  keywords = {parallel vector operator},
+}
+
+@Article{Heinrich2009,
+  author     = {Julian Heinrich and Daniel Weiskopf},
+  journal    = {IEEE Transactions on Visualization and Computer Graphics},
+  title      = {Continuous Parallel Coordinates},
+  year       = {2009},
+  issn       = {1077-2626},
+  number     = {6},
+  pages      = {1531-1538},
+  volume     = {15},
+  abstract   = {Typical scientific data is represented on a grid with appropriate
+	interpolation or approximation schemes,defined on a continuous domain.
+	The visualization of such data in parallel coordinates may reveal
+	patterns latently contained in the data and thus can improve the
+	understanding of multidimensional relations. In this paper, we adopt
+	the concept of continuous scatterplots for the visualization of spatially
+	continuous input data to derive a density model for parallel coordinates.
+	Based on the point-line duality between scatterplots and parallel
+	coordinates, we propose a mathematical model that maps density from
+	a continuous scatterplot to parallel coordinates and present different
+	algorithms for both numerical and analytical computation of the resulting
+	density field. In addition, we show how the 2-D model can be used
+	to successively construct continuous parallel coordinates with an
+	arbitrary number of dimensions. Since continuous parallel coordinates
+	interpolate data values within grid cells, a scalable and dense visualization
+	is achieved, which will be demonstrated for typical multi-variate
+	scientific data.},
+  address    = {Los Alamitos, CA, USA},
+  bdsk-url-1 = {http://doi.ieeecomputersociety.org/10.1109/TVCG.2009.131},
+  doi        = {http://doi.ieeecomputersociety.org/10.1109/TVCG.2009.131},
+  file       = {:pdfs/Heinrich2009.pdf:PDF},
+  keywords   = {parallel coordinates, multiple views, multi-variate, visualization, interpolation},
+  publisher  = {IEEE Computer Society},
+}
+
+@article{Bachthaler2008,
+	abstract = {Scatter plots are well established means of visualizing discrete data
+	values with two data variables as a collection of discrete points.
+	We aim at generalizing the concept of scatter plots to the visualization
+	of spatially continuous input data by a continuous and dense plot.
+	An example of a continuous input field is data defined on an n-D
+	spatial grid with respective interpolation or reconstruction of in-between
+	values. We propose a rigorous, accurate, and generic mathematical
+	model of continuous scatter plots that considers an arbitrary density
+	defined on an input field on an n-D domain and that maps this density
+	to m-D scatter plots. Special cases are derived from this generic
+	model and discussed in detail: scatter plots where the n-D spatial
+	domain and the m-D data-attribute domain have identical dimension,
+	1-D scatter plots as a way to define continuous histograms, and 2-D
+	scatter plots of data on 3-D spatial grids. We show how continuous
+	histograms are related to traditional discrete histograms and to
+	the histograms of isosurface statistics. Based on the mathematical
+	model of continuous scatter plots, respective visualization algorithms
+	are derived, in particular for 2-D scatter plots of data from 3-D
+	tetrahedral grids. For several visualization tasks, we show the applicability
+	of continuous scatter plots. Since continuous scatter plots do not
+	only sample data at grid points but interpolate data values within
+	cells, a dense and complete visualization of the data set is achieved
+	that scales well with increasing data set size. Especially for irregular
+	grids with varying cell size, improved results are obtained when
+	compared to conventional scatter plots. Therefore, continuous scatter
+	plots are a suitable extension of a statistics visualization technique
+	to be applied to typical data from scientific computation.},
+	author = {Sven Bachthaler and Daniel Weiskopf},
+	journal = {IEEE Transactions on Visualization and Computer Graphics (Proceedings Visualization 2008)},
+	keywords = {Scatter plot, histogram, continuous frequency plot, interpolation},
+	number = {6},
+	pages = {1428--1436},
+	title = {Continuous Scatterplots},
+	volume = {14},
+	year = {2008}}
+
+@inproceedings{Edelsbrunner2008b,
+	author = {Edelsbrunner, Herbert and Harer, John and Patel, Amit K.},
+	booktitle = {Proceedings of the {Twenty}-fourth {Annual} {Symposium} on {Computational} {Geometry}},
+	doi = {10.1145/1377676.1377720},
+	isbn = {978-1-60558-071-5},
+	pages = {242--250},
+	publisher = {ACM},
+	series = {{SCG} '08},
+	title = {Reeb {Spaces} of {Piecewise} {Linear} {Mappings}},
+	year = {2008},
+	bdsk-url-1 = {https//doi.org/10.1145/1377676.1377720}}
+
+@article{Fuchs2008,
+	abstract = {Feature-based flow visualization is naturally dependent on feature extraction. To extract flow features, often higher order properties of the flow data are used such as the Jacobian or curvature properties, implicitly describing the flow features in terms of their inherent flow characteristics (for example, collinear flow and vorticity vectors). In this paper, we present recent research that leads to the (not really surprising) conclusion that feature extraction algorithms need to be extended to a time-dependent analysis framework (in terms of time derivatives) when dealing with unsteady flow data. Accordingly, we present two extensions of the parallel-vectors-based vortex extraction criteria to the time-dependent domain and show the improvements of feature-based flow visualization in comparison to the steady versions of this extraction algorithm both in the context of a high-resolution data set, that is, a simulation specifically designed to evaluate our new approach and for a real-world data set from a concrete application.},
+	author = {Raphael Fuchs and Ronald Peikert and Helwig Hauser and Filip Sadlo and Philip Muigg},
+	journal = {IEEE Transactions on Visualization and Computer Graphics},
+	keywords = {parallel vector operator, vortex extraction, flow, Time-varying, feature,},
+	number = {3},
+	pages = {615--626},
+	title = {Parallel Vectors Criteria for Unsteady Flow Vortices},
+	volume = {14},
+	year = {2008}}
+
+@article{Janicke2008,
+	abstract = {The visualization and exploration of multivariate data is still a
+	challenging task. Methods either try to visualize all variables simultaneously
+	at each position using glyph-based approaches or use linked views
+	for the interaction between attribute space and physical domain such
+	as brushing of scatterplots. Most visualizations of the attribute
+	space are either difficult to understand or suffer from visual clutter.
+	We propose a transformation of the high-dimensional data in attribute
+	space to 2D that results in a point cloud, called attribute cloud,
+	such that points with similar multivariate attributes are located
+	close to each other. The transformation is based on ideas from multivariate
+	density estimation and manifold learning. The resulting attribute
+	cloud is an easy to understand visualization of multivariate data
+	in two dimensions. We explain several techniques to incorporate additional
+	information into the attribute cloud, that help the user get a better
+	understanding of multivariate data. Using different examples from
+	fluid dynamics and climate simulation, we show how brushing can be
+	used to explore the attribute cloud and find interesting structures
+	in physical space.},
+	address = {Piscataway, NJ, USA},
+	author = {Heike J\"anicke and Michael B\"ottinger and Gerik Scheuermann},
+	doi = {http://dx.doi.org/10.1109/TVCG.2008.116},
+	file = {Paper:/Users/ingrid/Documents/Paper/InJabRev/MISC/2008/jaenicke08attributeClouds.pdf:PDF},
+	issn = {1077-2626},
+	journal = {IEEE Transactions on Visualization and Computer Graphics},
+	keywords = {multi-variate, brushing and linking, data transformation, manifold learning, linked views},
+	number = {6},
+	pages = {1459--1466},
+	
+	title = {Brushing of Attribute Clouds for the Visualization of Multivariate Data},
+	volume = {14},
+	year = {2008},
+	bdsk-url-1 = {http://dx.doi.org/10.1109/TVCG.2008.116}}
+
+@inproceedings{Weinkauf2008,
+	abstract = {In our work we examine a high-dimensional, massive flow data set around
+	an airfoil using a topology-based vortex analysis. The 3D time-dependent
+	flow depends on two additional parameters which are introduced by
+	an active flow control technique aiming at increasing the lift by
+	periodic blowing and suction. In particular, we study the influence
+	of the actuation parameters frequency and intensity of air injection
+	and show how our vortex analysis helps in understanding the underlying
+	physics.},
+	author = {Tino Weinkauf and Jan Sahner and Bert G{"u}nther and Holger Theisel and Hans-Christian Hege and Frank Thiele},
+	booktitle = {Proc. SimVis 2008},
+	keywords = {flow, feature, Parameter study},
+	pages = {237--251},
+	title = {Feature-based Analysis of a Multi-Parameter Flow Simulation},
+	year = {2008}}
+
+@article{Akiba2007a,
+	abstract = {Recent developments in numerical methodology for combustion simulations
+	that effectively harness modern high-performance parallel computers
+	can simulate reacting flows by using high-fidelity models for the
+	underlying complex processes. However, a single run of the simulation
+	can produce multiple terabytes of raw data that are vast in the spatial
+	(near a billion grid points), temporal (100,000 time steps), and
+	variable (tens of variables) domains, creating a formidable challenge
+	for subsequent analysis and interpretation. In addition to the data
+	set's sheer size, the difficulty of knowledge extraction is compounded
+	by the complexity of the turbulent flow fields and the phenomena
+	under study, as well as by the different data types (particle and
+	field data). To understand the dynamic mechanisms of extinction and
+	reignition in turbulent flames, for example, scientists need intuitive
+	and convenient ways to validate known relationships and reveal hidden
+	ones between multiple variables. In a collaboration between the University
+	of California, Davis and Sandia National Laboratories in Livermore,
+	California, our team developed interactive visualization techniques
+	and an interface design that enable validation and improved understanding
+	of turbulent combustion simulations, letting.},
+	acmid = {1251823},
+	address = {Piscataway, NJ, USA},
+	author = {Akiba, Hiroshi and Ma, Kwan-Liu and Chen, Jacqueline H. and Hawkes, Evatt R.},
+	doi = {10.1109/MCSE.2007.42},
+	issn = {1521-9615},
+	issue_date = {March 2007},
+	journal = {Computing in Science and Engeneering},
+	keywords = {combustion, flow, biomedical, computational modeling, dynamics, turbulent flow, multi-variate},
+	month = mar,
+	number = {2},
+	numpages = {8},
+	pages = {76--83},
+	publisher = {IEEE Educational Activities Department},
+	read = {1},
+	title = {Visualizing Multivariate Volume Data from Turbulent Combustion Simulations},
+	url = {http://dx.doi.org/10.1109/MCSE.2007.42},
+	volume = {9},
+	year = {2007},
+	bdsk-url-1 = {http://dx.doi.org/10.1109/MCSE.2007.42}}
+
+@inproceedings{Buerger2007,
+	abstract = {In this state-of-the-art report we discuss relevant research works related to the visualization of complex, multi-variate data. We focus on ''non-classical'' approaches, i.e. approaches which haven't been discussed in previous related reports, and we highlight techniques which potentially lead towards new directions in visualization research. We discuss how different techniques take effect at specific stages of the visualization pipeline and how they apply to multi-variate data sets being composed of scalars, vectors, and tensors. We also provide a categorization of these techniques in the aim for a better overview of related approaches. In the second part of this paper we take a look at recent techniques that are useful for the visualization of complex data sets either because they are general purpose or because they can be adapted to specific problems.},
+	author = {Raphael B\"urger and Helwig Hauser},
+	booktitle = {EuroGraphics 2007 State of the Art Reports (STARs)},
+	file = {Paper:/Users/ingrid/Documents/Paper/InJabRev/MISC/2007/buerger07star.pdf:PDF},
+	isbn = {1017-4656},
+	keywords = {multi-variate, STAR, feature, multi-field},
+	pages = {117--134},
+	title = {Visualization of Multi-variate Scientific Data},
+	url = {http://www.cg.tuwien.ac.at/research/publications/2007/buerger-2007-star/},
+	year = {2007},
+	bdsk-url-1 = {http://www.cg.tuwien.ac.at/research/publications/2007/buerger-2007-star/}}
+
+@inproceedings{Blaas2007,
+	abstract = {Multi-field datasets contain multiple parameters defined over the
+	same spatio-temporal domain. In medicine, such multi-field data is
+	being used more often every day, and there is an urgent need for
+	exploratory visualization approaches that are able to deal effectively
+	with the data-analysis. In this paper, we present a highly interactive,
+	coordinated view-based visualization approach that has been developed
+	especially for dealing with multi-field medical data. It can show
+	any number of views of the physical domain and also of the abstract
+	high-dimensional feature space. The approach has been optimized for
+	interactive use with very large datasets. It is based on intuitive
+	interaction techniques, and integrates analysis techniques from pattern
+	classification to guide the exploration process. We will give some
+	details about the implementation, and we demonstrate the utility
+	of our approach with two real medical use cases.},
+	author = {Jorik Blaas and Charl P. Botha and Frits H. Post},
+	booktitle = {Proceedings of Eurographics - IEEE VGTC Symposium on Visualization '07},
+	journal = {Proceedings of Eurographics - IEEE VGTC Symposium on Visualization 2007},
+	keywords = {multi-field, feature space, multiple views},
+	note = {K Museth, T M{\"o}ller \& A Ynnerman (Eds.),},
+	pages = {123--130},
+	title = {Interactive visualization of multi-field medical data using linked physical and feature-space views},
+	year = {2007}}
+
+@article{Bremer2007,
+	abstract = {Scientific datasets obtained by measurement or produced by computational simulations must be analyzed to understand the phenomenon under study. The analysis typically requires a mathematically sound definition of the features of interest and robust algorithms to identify these features, compute statistics about them, and often track them over time. Because scientific datasets often capture phenomena with multi-scale behaviour, and almost always contain noise the definitions and algorithms must be designed with sufficient flexibility and care to allow multi-scale analysis and noise-removal. In this paper, we present some recent work on topological feature extraction and tracking with applications in molecular analysis, combustion simulation, and structural analysis of porous materials.},
+	author = {Peer-Timo Bremer and Eduardo M. Bringa and Duchaineau, M. A. and Gyulassy, A. G. and Laney, D. and Mascarenhas, A. and Pascucci, V.},
+	doi = {10.1088/1742-6596/78/1/012007},
+	journal = {Journal of Physics Conference Series},
+	keywords = {topolgy, Jacobi set, tracking},
+	number = {1},
+	title = {Topological feature extraction and tracking},
+	volume = {78},
+	year = {2007}}
+
+@article{Janicke2007,
+	abstract = {Modern unsteady (multi-)field visualizations require an effective
+	reduction of the data to be displayed. From a huge amount of information
+	the most informative parts have to be extracted. Instead of the fuzzy
+	application dependent notion of feature, a new approach based on
+	information theoretic concepts is introduced in this paper to detect
+	important regions. This is accomplished by extending the concept
+	of local statistical complexity from finite state cellular automata
+	to discretized (multi-)fields. Thus, informative parts of the data
+	can be highlighted in an application-independent, purely mathematical
+	sense. The new measure can be applied to unsteady multifields on
+	regular grids in any application domain. The ability to detect and
+	visualize important parts is demonstrated using diffusion, flow,
+	and weather simulations.},
+	author = {Heike J\"anicke and Alexander Wiebel and Gerik Scheuermann and Wolfgang Kollmann},
+	journal = {IEEE Transactions on Visualization and Computer Graphics (Vis07)},
+	keywords = {Local statistical complexity, multi-field, time-dependent, coherent structures, feature detection, information theory, flow visualization},
+	number = {6},
+	pages = {1384--1392},
+	timestamp = {2009.08.03},
+	title = {Multifield Visualization Using Local Statistical Complexity},
+	volume = {13},
+	year = {2007}}
+
+@Article{Love2005,
+  author   = {Alison L. Love and Alex Pang and David Kao},
+  journal  = {IEEE Comput. Graph. Appl.,},
+  title    = {Visualizing spatial multivalue data},
+  year     = {2005},
+  number   = {3},
+  pages    = {69--79},
+  volume   = {25},
+  abstract = {We introduce multivalue data as a new data type in the context of scientific visualization. While this data type has existed in other
+fields, the visualization community has largely ignored it. Formally, a multivalue datum is a collection of values about a single variable. This collection can be denoted as M = (v1, v2, ... ,vn) where each vi is a value of variable v. The collection might arise from a measurement process or a modeled process. In the latter case, it is use- ful to consider probabilistic models where the collec- tion of values describes the set of possible outcomes of the modeled process.
+Multivalue data sets can be defined for multiple dimen- sions. A spatial multivalue data set consists of a multi- value datum at each physical location in the domain. The time dimension is equally valid. This leads to spatio- temporal multivalue data sets where there is time vary- ing, multidimensional data with a multivalue datum at each location and time.},
+  file     = {:pdfs/Love2005.pdf:PDF},
+  keywords = {mulit-variate, Uncertainty visualization},
+}
+
+@InCollection{Edelsbrunner2004b,
+  author    = {Herbert Edelsbrunner and John Harer},
+  booktitle = {Foundations of Computational Mathematics, Minneapolis 2002},
+  publisher = {Cambridge Universtiy Press},
+  title     = {Jacobi Sets of Multiple Morse Functions},
+  year      = {2004},
+  editor    = {F. Cucker and R. DeVore and P. Olver and E. Sueli},
+  pages     = {37--57},
+  abstract  = {The Jacobi set of two Morse functions defined on a common d-manifold is the set of critical points of the restrictions of one function to the level sets of the other function. Equivalently, it is the set of points where the gradients of the functions are parallel. For a generic pair of Morse functions, the Jacobi set is a smoothly embedded 1-manifold. We give a polynomial-time algorithm that computes the piecewise linear analog of the Jacobi set for functions specified at the vertices of a triangulation, and we generalize all results to more than two but at most d-Morse functions.},
+  file      = {:pdfs/Edelsbrunner2004b.pdf:PDF},
+  keywords  = {Jacobi set, differential topology, computational topology, Morse functions, critical point, level sets, Betti numbers, topology, tracking},
+}
+
+@Book{Saeki2004,
+  author    = {O. Saeki},
+  publisher = {Springer-Verlag},
+  title     = {Topology of Singular Fibers of Differentiable Maps},
+  year      = {2004},
+  number    = {1854},
+  series    = {Lecture Notes in Mathematics},
+  abstract  = {The volume develops a thorough theory of singular fibers of generic differentiable maps. This is the first work that establishes the foundational framework of the global study of singular differentiable maps of negative codimension from the viewpoint of differential topology. The book contains not only a general theory, but also some explicit examples together with a number of very concrete applications.
+
+This is a very interesting subject in differential topology, since it shows a beautiful interplay between the usual theory of singularities of differentiable maps and the geometric topology of manifolds.},
+  doi       = {doi: 10. 1007/b100393 2},
+  file      = {:pdfs/Saeki2004.pdf:PDF},
+  keywords  = {fiber, mathematical foundations, maps, topolgy},
+}
+
+@InProceedings{Ioannidis2003,
+  author    = {Yannis Ioannidis},
+  booktitle = {Proc. of Very Large Databases},
+  title     = {The history of histograms},
+  year      = {2003},
+  file      = {:pdfs/Ioannidis2003.pdf:PDF},
+}
+
+@InProceedings{Kniss2003b,
+  author     = {Joe M. Kniss and Simon Premoze and Milan Ikits and Aaron E. Lefohn and Charles Hansen and Emil Praun},
+  booktitle  = {Proceedings of the IEEE Conference on Visualization (VIS'03)},
+  title      = {Gaussian Transfer Functions for Multi-Field Volume Visualization},
+  year       = {2003},
+  address    = {Washington, DC, USA},
+  pages      = {65},
+  publisher  = {IEEE Computer Society},
+  abstract   = {Volume rendering is a flexible technique for visualizing dense 3D
+	volumetric datasets. A central element of volume rendering is the
+	conversion between data values and observable quantities such as
+	color and opacity. This process is usually realized through the use
+	of transfer functions that are precomputed and stored in lookup tables.
+	For multidimensional transfer functions applied to multivariate data,
+	these lookup tables become prohibitively large. We propose the direct
+	evaluation of a particular type of transfer functions based on a
+	sum of Gaussians. Because of their simple form (in terms of number
+	of parameters), these functions and their analytic integrals along
+	line segments can be evaluated efficiently on current graphics hardware,
+	obviating the need for precomputed lookup tables. We have adopted
+	these transfer functions because they are well suited for classification
+	based on a unique combination of multiple data values that localize
+	features in the transfer function domain. We apply this technique
+	to the visualization of several multivariate datasets (CT, cryosection)
+	that are difficult to classify and render accurately at interactive
+	rates using traditional approaches.},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/VISUAL.2003.1250412},
+  doi        = {http://dx.doi.org/10.1109/VISUAL.2003.1250412},
+  file       = {:pdfs/Kniss2003b.pdf:PDF},
+  isbn       = {0-7695-2030-8},
+  keywords   = {Volume Rendering, Transfer Functions, multi-field},
+}
+
+@InProceedings{Riley2003,
+  author    = {Kirk Riley and David Ebert and Charles Hansen and Jason Levit},
+  booktitle = {Proceedings of IEEE Visualization '03},
+  title     = {Visually Accurate Multi-Field Weather Visualizations},
+  year      = {2003},
+  pages     = {279--286},
+  abstract  = {Weather visualization is a difficult problem because it comprises
+	volumetric multi-field data and traditional surface-based approaches
+	obscure details of the complex three-dimensional structure of cloud
+	dynamics. Therefore, visually accurate volumetric multi-field visualization
+	of storm scale and cloud scale data is needed to effectively and
+	efficiently communicate vital information to weather forecasters,
+	improving storm forecasting, atmospheric dynamics models, and weather
+	spotter training. We have developed a new approach to multi-field
+	visualization that uses field specific, physically-based opacity,
+	transmission, and lighting calculations per-field for the accurate
+	visualization of storm and cloud scale weather data. Our approach
+	extends traditional transfer function approaches to multi-field data
+	and to volumetric illumination and scattering.},
+  file      = {:pdfs/Riley2003.pdf:PDF},
+  keywords  = {multi-field, visually accurate, Weather Visualization},
+}
+
+@InProceedings{Carlsson2009,
+  author       = {Carlsson, Gunnar and Singh, Gurjeet and Zomorodian, Afra},
+  booktitle    = {Algorithms and Computation: 20th International Symposium, ISAAC 2009, Honolulu, Hawaii, USA, December 16-18, 2009. Proceedings 20},
+  title        = {Computing multidimensional persistence},
+  year         = {2009},
+  organization = {Springer},
+  pages        = {730--739},
+}
+
+@Article{Carr2006,
+  author  = {Hamish, Carr and Duffy, Brian and Denby, Brain},
+  journal = {IEEE Transactions on Visualization and Computer Graphics},
+  title   = {On {{Histograms}} and {{Isosurface Statistics}}},
+  year    = {2006},
+  issn    = {1941-0506},
+  number  = {5},
+  pages   = {1259--1266},
+  volume  = {12},
+  doi     = {10.1109/TVCG.2006.168},
+  file    = {:pdfs/Carr2006.pdf:PDF},
+}
+
+@Article{Scheidegger2008,
+  author  = {Scheidegger, Carlos E. and Schreiner, John M. and Duffy, Brian and Carr, Hamish and Silva, Cl{\'a}udio T.},
+  journal = {IEEE Transactions on Visualization and Computer Graphics},
+  title   = {Revisiting {{Histograms}} and {{Isosurface Statistics}}},
+  year    = {2008},
+  issn    = {1941-0506},
+  number  = {6},
+  pages   = {1659--1666},
+  volume  = {14},
+  doi     = {10.1109/TVCG.2008.160},
+}
+
+@Article{Duffy2013a,
+  author  = {Duffy, Brian and Carr, Hamish and M{\"o}ller, Torsten},
+  journal = {IEEE Transactions on Visualization and Computer Graphics},
+  title   = {Integrating {{Isosurface Statistics}} and {{Histograms}}},
+  year    = {2013},
+  issn    = {1941-0506},
+  number  = {2},
+  pages   = {263--277},
+  volume  = {19},
+  doi     = {10.1109/TVCG.2012.118},
+  file    = {:pdfs/Duffy2013a.pdf:PDF},
+}
+
+@InProceedings{Agarwal2021,
+  author    = {Agarwal, Tripti and Chattopadhyay, Amit and Natarajan, Vijay},
+  booktitle = {Topological {{Methods}} in {{Data Analysis}} and {{Visualization VI}}},
+  title     = {Topological feature search in time-varying multifield data},
+  year      = {2021},
+  address   = {Cham},
+  editor    = {Hotz, Ingrid and Bin Masood, Talha and Sadlo, Filip and Tierny, Julien},
+  pages     = {197--217},
+  publisher = {Springer International Publishing},
+  abstract  = {A wide range of data that appear in scientific experiments and simulations are multivariate or multifield in nature, consisting of multiple scalar fields. Topological feature search of such data aims to reveal important properties useful to the domain scientists. It has been shown in recent works that a single scalar field is insufficient to capture many important topological features in the data, instead one needs to consider topological relationships between multiple scalar fields. In the current paper, we propose a novel method of finding similarity between two multifield data by comparing their respective fiber component distributions. Given a time-varying multifield data, the method computes a metric plot for each pair of histograms at consecutive time stamps to understand the topological changes in the data over time. We validate the method using real and synthetic data. The effectiveness of the proposed method is shown by its ability to capture important topological features that are not always possible to detect using the individual component scalar fields.},
+  doi       = {10.1007/978-3-030-83500-2_11},
+  file      = {:pdfs/Agarwal2021.pdf:PDF},
+  isbn      = {978-3-030-83500-2},
+  langid    = {english},
+}
+
+@Article{Ageeli2023,
+  author   = {Ageeli, Amani and {Jaspe-Villanueva}, Alberto and Sicat, Ronell and Mannuss, Florian and Rautek, Peter and Hadwiger, Markus},
+  journal  = {IEEE Transactions on Visualization and Computer Graphics},
+  title    = {Multivariate {{Probabilistic Range Queries}} for {{Scalable Interactive 3D Visualization}}},
+  year     = {2023},
+  issn     = {1941-0506},
+  month    = jan,
+  number   = {1},
+  pages    = {646--656},
+  volume   = {29},
+  abstract = {Large-scale scientific data, such as weather and climate simulations, often comprise a large number of attributes for each data sample, like temperature, pressure, humidity, and many more. Interactive visualization and analysis require filtering according to any desired combination of attributes, in particular logical AND operations, which is challenging for large data and many attributes. Many general data structures for this problem are built for and scale with a fixed number of attributes, and scalability of joint queries with arbitrary attribute subsets remains a significant problem. We propose a flexible probabilistic framework for multivariate range queries that decouples all attribute dimensions via projection, allowing any subset of attributes to be queried with full efficiency. Moreover, our approach is output-sensitive, mainly scaling with the cardinality of the query result rather than with the input data size. This is particularly important for joint attribute queries, where the query output is usually much smaller than the whole data set. Additionally, our approach can split query evaluation between user interaction and rendering, achieving much better scalability for interactive visualization than the previous state of the art. Furthermore, even when a multi-resolution strategy is used for visualization, queries are jointly evaluated at the finest data granularity, because our framework does not limit query accuracy to a fixed spatial subdivision.},
+  doi      = {10.1109/TVCG.2022.3209439},
+  file     = {:pdfs/Ageeli2023.pdf:PDF},
+  keywords = {Data structures,Data visualization,High-dimensional filtering,Histograms,Humidity,multivariate attribute queries,multivariate filtering,output-sensitivity,Probabilistic logic,progressive culling,Query processing,Rendering (computer graphics)},
+  urldate  = {2024-10-22},
+}
+
+@InProceedings{Jankowai2023,
+  author     = {Jankowai, Jochen and Masood, Talha Bin and Hotz, Ingrid},
+  booktitle  = {2023 {{Topological Data Analysis}} and {{Visualization}} ({{TopoInVis}})},
+  title      = {Multi-{{Field Visualisation}} via {{Trait-Induced Merge Trees}}},
+  year       = {2023},
+  month      = oct,
+  pages      = {21--29},
+  abstract   = {In this work, we propose trait-based merge trees a generalization of merge trees to feature level sets, targeting the analysis of tensor field or general multi-variate data. For this, we employ the notion of traits defined in attribute space as introduced in the feature level sets framework. The resulting distance field in attribute space induces a scalar field in the spatial domain that serves as input for topological data analysis. The leaves in the merge tree represent those areas in the input data that are closest to the defined trait and thus most closely resemble the defined feature. Hence, the merge tree yields a hierarchy of features that allows for querying the most relevant and persistent features. The presented method includes different query methods for the tree which enable the highlighting of different aspects. We demonstrate the cross-application capabilities of this approach with three case studies from different domains.},
+  doi        = {10.1109/TopoInVis60193.2023.00009},
+  eventtitle = {2023 {{Topological Data Analysis}} and {{Visualization}} ({{TopoInVis}})},
+  file       = {:pdfs/Jankowai2023.pdf:PDF},
+  keywords   = {Chemistry,Data analysis,Data visualization,Design methodology,Human-centered computing,Level set,Rendering (computer graphics),Scientific visualization,Tensors,Visualization,Visualization application domains,Visualization design and evaluation methods},
+  url        = {https://ieeexplore.ieee.org/abstract/document/10363146?casa_token=loE0gPwj71MAAAAA:3kFaXjqeaa1qCDFkCNfP-NkSg7mcqZds88JLlqmjZCog_e37uWclhoe6cPYQLynSoRZiIzEb4A},
+  urldate    = {2024-10-22},
+}
+
+@InProceedings{Adilkhanov2019,
+  author    = {Adilkhanov, A. N. and Pavlov, A. V. and Taimanov, I. A.},
+  booktitle = {Computational {{Topology}} in {{Image Context}}},
+  title     = {Discrete {{Analog}} of the {{Jacobi Set}} for {{Vector Fields}}},
+  year      = {2019},
+  address   = {Cham},
+  editor    = {Marfil, Rebeca and Calder{\'o}n, Mariletty and {D{\'i}az del R{\'i}o}, Fernando and Real, Pedro and Bandera, Antonio},
+  pages     = {1--11},
+  publisher = {Springer International Publishing},
+  abstract  = {The Jacobi set is a useful descriptor of mutual behavior of functions defined on a common domain. We introduce the piecewise linear Jacobi set for general vector fields on simplicial complexes. This definition generalizes the definition of the Jacobi set for gradients of functions introduced by Edelsbrunner and Harer.},
+  doi       = {10.1007/978-3-030-10828-1_1},
+  file      = {:pdfs/Adilkhanov2019.pdf:PDF},
+  isbn      = {978-3-030-10828-1},
+  keywords  = {Jacobi set,Simplicial complex,Vector fields},
+  langid    = {english},
+}
+
+@InBook{Saeki2017,
+  author    = {Saeki, Osamu},
+  pages     = {3--33},
+  publisher = {Springer International Publishing},
+  title     = {Theory of Singular Fibers and Reeb Spaces for Visualization},
+  year      = {2017},
+  isbn      = {9783319446844},
+  booktitle = {Topological Methods in Data Analysis and Visualization IV},
+  doi       = {10.1007/978-3-319-44684-4_1},
+  issn      = {2197-666X},
+}
+
+@Article{Basu2022,
+  author    = {Basu, Saugata and Cox, Nathanael and Percival, Sarah},
+  journal   = {Discrete &amp; Computational Geometry},
+  title     = {On the Reeb Spaces of Definable Maps},
+  year      = {2022},
+  issn      = {1432-0444},
+  month     = jul,
+  number    = {2},
+  pages     = {372--405},
+  volume    = {68},
+  doi       = {10.1007/s00454-022-00400-0},
+  file      = {:pdfs/Basu2022.pdf:PDF},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@InBook{Bormann2020,
+  author    = {Bormann, Jan and Huettenberger, Lars and Garth, Christoph},
+  pages     = {173--185},
+  publisher = {Springer International Publishing},
+  title     = {The Approximation of Pareto Sets Using Directed Joint Contour Nets},
+  year      = {2020},
+  isbn      = {9783030430368},
+  booktitle = {Topological Methods in Data Analysis and Visualization V},
+  doi       = {10.1007/978-3-030-43036-8_11},
+  issn      = {2197-666X},
+}
+
+@Article{Ramamurthi2024,
+  author    = {Ramamurthi, Yashwanth and Chattopadhyay, Amit},
+  journal   = {IEEE Transactions on Visualization and Computer Graphics},
+  title     = {A Topological Distance Between Multi-Fields Based on Multi-Dimensional Persistence Diagrams},
+  year      = {2024},
+  issn      = {2160-9306},
+  month     = sep,
+  number    = {9},
+  pages     = {5939--5952},
+  volume    = {30},
+  doi       = {10.1109/tvcg.2023.3314763},
+  file      = {:pdfs/Ramamurthi2024.pdf:PDF},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@InProceedings{Ramamurthi2022,
+  author     = {Ramamurthi, Yashwanth and Chattopadhyay, Amit},
+  booktitle  = {Proceedings of the Thirteenth Indian Conference on Computer Vision, Graphics and Image Processing},
+  title      = {Topological Shape Matching using Multi-Dimensional Reeb Graphs},
+  year       = {2022},
+  month      = dec,
+  pages      = {1--10},
+  publisher  = {ACM},
+  series     = {ICVGIP’22},
+  collection = {ICVGIP’22},
+  doi        = {10.1145/3571600.3571606},
+  file       = {:pdfs/Ramamurthi2022.pdf:PDF},
+}
+
+@Article{Ramamurthi2022a,
+  author    = {Ramamurthi, Yashwanth and Agarwal, Tripti and Chattopadhyay, Amit},
+  journal   = {IEEE Transactions on Visualization and Computer Graphics},
+  title     = {A Topological Similarity Measure Between Multi-Resolution Reeb Spaces},
+  year      = {2022},
+  issn      = {2160-9306},
+  month     = dec,
+  number    = {12},
+  pages     = {4360--4374},
+  volume    = {28},
+  doi       = {10.1109/tvcg.2021.3087273},
+  file      = {:pdfs/Ramamurthi2022a.pdf:PDF},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Article{Asashiba2022,
+  author   = {Asashiba, Hideto and Buchet, Micka{\"e}l and Escolar, Emerson G. and Nakashima, Ken and Yoshiwaki, Michio},
+  journal  = {Computational Geometry},
+  title    = {On Interval Decomposability of {{2D}} Persistence Modules},
+  year     = {2022},
+  issn     = {0925-7721},
+  month    = aug,
+  pages    = {101879},
+  volume   = {105--106},
+  abstract = {In the persistent homology of filtrations, the indecomposable decompositions provide the persistence diagrams. However, in almost all cases of multidimensional persistence, the classification of all indecomposable modules is known to be a wild problem. One direction is to consider the subclass of interval-decomposable persistence modules, which are direct sums of interval representations. We introduce the definition of pre-interval representations, a more natural algebraic definition, and study the relationships between pre-interval, interval, and thin indecomposable representations. We show that over the ``equioriented'' commutative 2D grid, these concepts are equivalent. Moreover, we provide a criterion for determining whether or not an nD persistence module is interval/pre-interval/thin-decomposable without having to explicitly compute decompositions. For 2D persistence modules, we provide an algorithm for determining interval-decomposability, together with a worst-case complexity analysis that uses the total number of intervals in an equioriented commutative 2D grid. We also propose several heuristics to speed up the computation.},
+  doi      = {10.1016/j.comgeo.2022.101879},
+  file     = {:pdfs/Asashiba2022.pdf:PDF},
+  keywords = {Interval representations,Multidimensional persistence,Representation theory},
+  urldate  = {2024-04-16},
+}
+
+@Article{Botnan2022,
+  author   = {Botnan, Magnus Bakke and Lebovici, Vadim and Oudot, Steve},
+  journal  = {Discrete \& Computational Geometry},
+  title    = {On {{Rectangle-Decomposable}} 2-{{Parameter Persistence Modules}}},
+  year     = {2022},
+  issn     = {1432-0444},
+  month    = dec,
+  number   = {4},
+  pages    = {1078--1101},
+  volume   = {68},
+  abstract = {This paper addresses two questions: (a) can we identify a sensible class of 2-parameter persistence modules on which the rank invariant is complete? (b)~can we determine efficiently whether a given 2-parameter persistence module belongs to this class? We provide positive answers to both questions, and our class of interest is that of rectangle-decomposable modules. Our contributions include: on the one hand, a proof that the rank invariant is complete on rectangle-decomposable modules, together with an inclusion-exclusion formula for counting the multiplicities of the summands; on the other hand, algorithms to check whether a module induced in homology by a bifiltration is rectangle-decomposable, and to decompose it in the affirmative, with a better complexity than state-of-the-art decomposition methods for general 2-parameter persistence modules. Our algorithms are backed up by a new structure theorem, whereby a 2-parameter persistence module is rectangle-decomposable if, and only if, its restrictions to squares are. This local characterization is key to the efficiency of our algorithms, and it generalizes previous conditions derived for the smaller class of block-decomposable modules. It also admits an algebraic formulation that turns out to be a weaker version of the one for block-decomposability. By contrast, we show that general interval-decomposability does not admit such a local characterization, even when locality is understood in a broad sense. Our analysis focuses on the case of modules indexed over finite grids, the more general cases are left as future work.},
+  doi      = {10.1007/s00454-022-00383-y},
+  file     = {:pdfs/Botnan2022.pdf:PDF},
+  keywords = {55N31,68R99,Multiparameter persistence,Rank invariant,Topological data analysis},
+  langid   = {english},
+  urldate  = {2024-04-16},
+}
+
+@Article{Carriere2022,
+  author   = {Carri{\`e}re, Mathieu and Michel, Bertrand},
+  journal  = {Journal of Applied and Computational Topology},
+  title    = {Statistical Analysis of {{Mapper}} for Stochastic and Multivariate Filters},
+  year     = {2022},
+  issn     = {2367-1734},
+  month    = sep,
+  number   = {3},
+  pages    = {331--369},
+  volume   = {6},
+  abstract = {Reeb spaces, as well as their discretized versions called Mappers, are common descriptors used in topological data analysis, with plenty of applications in various fields of science, such as computational biology and data visualization, among others. The stability and quantification of the rate of convergence of the Mapper to the Reeb space has been studied a lot in recent works (Brown et al. in CoRR. arXiv:1909.03488, 2019; Carri{\`e}re and Oudot in Found Comput Math 18(6):1333--1396, 2017; Carri{\`e}re et al. in J Mach Learn Res 19(12):1--39, 2018; Munch and Wang in: 32nd international symposium on computational geometry (SoCG 2016), Schloss Dagstuhl--Leibniz-Zentrum fuer Informatik, 51: 53:1--53:16, 2016), focusing on the case where a scalar-valued filter is used for the computation of Mapper. On the other hand, much less is known in the multivariate case, when the codomain of the filter is \$\$\{{\textbackslash}mathbb \{R\}\}{\textasciicircum}p\$\$, and in the general case, when it is a general metric space \$\$({\textbackslash}mathcal \{Z\},d\_{\textbackslash}mathcal \{Z\})\$\$, instead of \$\$\{{\textbackslash}mathbb \{R\}\}\$\$. The few results that are available in this setting (Dey et al. in: 33rd international symposium on computational geometry (SoCG 2017), Schloss Dagstuhl--Leibniz-Zentrum fuer Informatik, 77, 36:1--36:16, 2017; Munch and Wang, 2016) can only handle continuous topological spaces and cannot be used as is for finite metric spaces representing data, such as point clouds and distance matrices. In this article, we introduce a slight modification of the usual Mapper construction and we give risk bounds for estimating the Reeb space using this estimator. Our approach applies in particular to the setting where the filter function used to compute Mapper is also estimated from data, such as the eigenfunctions of PCA. Our results are given with respect to the Gromov-Hausdorff distance, computed with specific filter-based pseudometrics for Mappers and Reeb spaces defined in Dey et al. (2017). We finally provide examples of this setting in statistics and machine learning for different kinds of target filters, as well as numerical experiments that demonstrate the relevance of our approach.},
+  doi      = {10.1007/s41468-022-00090-w},
+  file     = {:pdfs/Carriere2022.pdf:PDF},
+  keywords = {55N31,62R40,Confidence regions,Mapper,Topological data analysis},
+  langid   = {english},
+  urldate  = {2024-04-11},
+}
+
+@Article{Cerri2019,
+  author   = {Cerri, Andrea and Ethier, Marc and Frosini, Patrizio},
+  journal  = {Journal of Applied and Computational Topology},
+  title    = {On the Geometrical Properties of the Coherent Matching Distance in {{2D}} Persistent Homology},
+  year     = {2019},
+  issn     = {2367-1734},
+  month    = dec,
+  number   = {4},
+  pages    = {381--422},
+  volume   = {3},
+  abstract = {In this paper we study a new metric for comparing Betti numbers functions in bidimensional persistent homology, based on coherent matchings, i.e. families of matchings that vary in a continuous way. We prove some new results about this metric, including a property of stability. In particular, we show that the computation of this distance is strongly related to suitable filtering functions associated with lines of slope 1, so underlining the key role of these lines in the study of bidimensional persistence. In order to prove these results, we introduce and study the concepts of extended Pareto grid for a normal filtering function as well as of transport of a matching. As a by-product, we obtain a theoretical framework for managing the phenomenon of monodromy in 2D persistent homology.},
+  doi      = {10.1007/s41468-019-00041-y},
+  file     = {:pdfs/Cerri2019.pdf:PDF},
+  keywords = {65D18,68U05,Coherent transport of a matching,Extended Pareto grid,Jacobi set,Multidimensional persistence,Persistent monodromy group,Primary 55N35,Secondary 57R19},
+  langid   = {english},
+  urldate  = {2024-04-11},
+}
+
+@Article{Corbet2019a,
+  author   = {Corbet, Ren{\'e} and Fugacci, Ulderico and Kerber, Michael and Landi, Claudia and Wang, Bei},
+  journal  = {Computers \& Graphics: X},
+  title    = {A Kernel for Multi-Parameter Persistent Homology},
+  year     = {2019},
+  issn     = {2590-1486},
+  month    = dec,
+  pages    = {100005},
+  volume   = {2},
+  abstract = {Topological data analysis and its main method, persistent homology, provide a toolkit for computing topological information of high-dimensional and noisy data sets. Kernels for one-parameter persistent homology have been established to connect persistent homology with machine learning techniques with applicability on shape analysis, recognition and classification. We contribute a kernel construction for multi-parameter persistence by integrating a one-parameter kernel weighted along straight lines. We prove that our kernel is stable and efficiently computable, which establishes a theoretical connection between topological data analysis and machine learning for multivariate data analysis.},
+  doi      = {10.1016/j.cagx.2019.100005},
+  file     = {/home/peter/Zotero/storage/WG4QH3XA/Corbet et al. - 2019 - A kernel for multi-parameter persistent homology.pdf},
+  keywords = {Machine learning,Multivariate analysis,Persistent homology,Topological data analysis},
+  urldate  = {2024-10-22},
+}
+
+@Article{Dey2022,
+  author   = {Dey, Tamal K. and Xin, Cheng},
+  journal  = {Journal of Applied and Computational Topology},
+  title    = {Generalized Persistence Algorithm for Decomposing Multiparameter Persistence Modules},
+  year     = {2022},
+  issn     = {2367-1734},
+  month    = sep,
+  number   = {3},
+  pages    = {271--322},
+  volume   = {6},
+  abstract = {The classical persistence algorithm computes the unique decomposition of a persistence module implicitly given by an input simplicial filtration. Based on matrix reduction, this algorithm is a cornerstone of the emergent area of topological data analysis. Its input is a simplicial filtration defined over the integers \$\$\{{\textbackslash}mathbb \{Z\}\}\$\$giving rise to a 1-parameter persistence module. It has been recognized that multiparameter version of persistence modules given by simplicial filtrations over d-dimensional integer grids \$\$\{{\textbackslash}mathbb \{Z\}\}{\textasciicircum}d\$\$is equally or perhaps more important in data science applications. However, in the multiparameter setting, one of the main challenges is that topological summaries based on algebraic structure such as decompositions and bottleneck distances cannot be as efficiently computed as in the 1-parameter case because there is no known extension of the persistence algorithm to multiparameter persistence modules. We present an efficient algorithm to compute the unique decomposition of a finitely presented persistence module M defined over the multiparameter \$\$\{{\textbackslash}mathbb \{Z\}\}{\textasciicircum}d\$\$. The algorithm first assumes that the module is presented with a set of N generators and relations that are distinctly graded. Based on a generalized matrix reduction technique it runs in \$\$O(N{\textasciicircum}\{2{\textbackslash}omega +1\})\$\$time where \$\${\textbackslash}omega {$<$}2.373\$\$is the exponent of matrix multiplication. This is much better than the well known algorithm called Meataxe which runs in \$\$\{{\textbackslash}tilde\{O\}\}(N{\textasciicircum}\{6(d+1)\})\$\$time on such an input. In practice, persistence modules are usually induced by simplicial filtrations. With such an input consisting of n simplices, our algorithm runs in \$\$O(n{\textasciicircum}\{(d-1)(2{\textbackslash}omega + 1)\})\$\$time for \$\$d{\textbackslash}ge 2\$\$. For the special case of zero dimensional homology, it runs in time \$\$O(n{\textasciicircum}\{2{\textbackslash}omega +1\})\$\$.},
+  doi      = {10.1007/s41468-022-00087-5},
+  file     = {:pdfs/Dey2022.pdf:PDF},
+  keywords = {18G90,55-08,55U30,Computational topology,Indecomposables,Matrix reduction,Multiparameter persistence,Persistence module,Presentations,Topological data analysis},
+  langid   = {english},
+  urldate  = {2024-04-11},
+}
+
+@Article{Fugacci2023,
+  author   = {Fugacci, Ulderico and Kerber, Michael and Rolle, Alexander},
+  journal  = {Computational Geometry},
+  title    = {Compression for 2-Parameter Persistent Homology},
+  year     = {2023},
+  issn     = {0925-7721},
+  month    = feb,
+  pages    = {101940},
+  volume   = {109},
+  abstract = {Compression aims to reduce the size of an input, while maintaining its relevant properties. For multi-parameter persistent homology, compression is a necessary step in any computational pipeline, since standard constructions lead to large inputs, and computational tasks in this area tend to be expensive. We propose two compression methods for chain complexes of free 2-parameter persistence modules. The first method extends the multi-chunk algorithm for one-parameter persistent homology, returning the smallest chain complex among all the ones quasi-isomorphic to the input. The second method produces minimal presentations of the homology of the input; it is based on an algorithm of Lesnick and Wright, but incorporates several improvements that lead to substantial performance gains. The two methods are complementary, and can be combined to compute minimal presentations for complexes with millions of generators in a few seconds. The methods have been implemented, and the software is publicly available. We report on experimental evaluations, which demonstrate substantial improvements in performance compared to previously available compression strategies.},
+  doi      = {10.1016/j.comgeo.2022.101940},
+  file     = {:pdfs/Fugacci2023.pdf:PDF},
+  keywords = {Matrix reduction,Minimal presentations,Multi-parameter persistent homology},
+  urldate  = {2024-04-16},
+}
+
+@Article{Harrington2019,
+  author    = {Harrington, Heather A. and Otter, Nina and Schenck, Hal and Tillmann, Ulrike},
+  journal   = {SIAM Journal on Applied Algebra and Geometry},
+  title     = {Stratifying {{Multiparameter Persistent Homology}}},
+  year      = {2019},
+  month     = jan,
+  number    = {3},
+  pages     = {439--471},
+  volume    = {3},
+  abstract  = {A crucial step in the analysis of persistent homology is the transformation of data into an appropriate topological object (which, in our case, is a simplicial complex). Software packages for computing persistent homology typically construct Vietoris--Rips or other distance-based simplicial complexes on point clouds because they are relatively easy to compute. We investigate alternative methods of constructing simplicial complexes and the effects of making associated choices during simplicial-complex construction on the output of persistent-homology algorithms. We present two new methods for constructing simplicial complexes from two-dimensional geospatial data (such as maps). We apply these methods to a California precinct-level voting data set, and we thereby demonstrate that our new constructions can capture geometric characteristics that are missed by distance-based constructions. Our new constructions can thus yield more interpretable persistence modules and barcodes for geospatial data. In particular, they are able to distinguish short-persistence features that occur only for a narrow range of distance scales (e.g., voting patterns in densely populated cities) from short-persistence noise by incorporating information about other spatial relationships between regions.},
+  doi       = {10.1137/18M1224350},
+  file      = {:pdfs/Harrington2019.pdf:PDF},
+  keywords  = {important},
+  publisher = {{Society for Industrial and Applied Mathematics}},
+  urldate   = {2024-04-12},
+}
+
+@Article{Lesnick2022,
+  author    = {Lesnick, Michael and Wright, Matthew},
+  journal   = {SIAM Journal on Applied Algebra and Geometry},
+  title     = {Computing {{Minimal Presentations}} and {{Bigraded Betti Numbers}} of 2-{{Parameter Persistent Homology}}},
+  year      = {2022},
+  month     = jun,
+  number    = {2},
+  pages     = {267--298},
+  volume    = {6},
+  abstract  = {.We introduce several geometric notions, including the width of a homology class, to the theory of persistent homology. These ideas provide geometric interpretations of persistence diagrams. Indeed, we give quantitative and geometric descriptions of the ``life span'' or ``persistence'' of a homology class. As a case study, we analyze the power filtration on unweighted graphs and provide explicit bounds for the life spans of homology classes in persistence diagrams in all dimensions.},
+  doi       = {10.1137/20M1388425},
+  file      = {/home/peter/Zotero/storage/IFDYFUH5/Lesnick and Wright - 2022 - Computing Minimal Presentations and Bigraded Betti.pdf},
+  keywords  = {important},
+  publisher = {{Society for Industrial and Applied Mathematics}},
+  urldate   = {2024-04-12},
+}
+
+@Article{Scaramuccia2020,
+  author   = {Scaramuccia, Sara and Iuricich, Federico and De Floriani, Leila and Landi, Claudia},
+  journal  = {Computational Geometry},
+  title    = {Computing Multiparameter Persistent Homology through a Discrete {{Morse-based}} Approach},
+  year     = {2020},
+  issn     = {0925-7721},
+  month    = aug,
+  pages    = {101623},
+  volume   = {89},
+  abstract = {Persistent homology allows for tracking topological features, like loops, holes and their higher-dimensional analogues, along a single-parameter family of nested shapes. Computing descriptors for complex data characterized by multiple parameters is becoming a major challenging task in several applications, including physics, chemistry, medicine, and geography. Multiparameter persistent homology generalizes persistent homology to allow for the exploration and analysis of shapes endowed with multiple filtering functions. Still, computational constraints prevent multiparameter persistent homology to be a feasible tool for analyzing large size data sets. We consider discrete Morse theory as a strategy to reduce the computation of multiparameter persistent homology by working on a reduced dataset. We propose a new preprocessing algorithm, well suited for parallel and distributed implementations, and we provide the first evaluation of the impact of multiparameter persistent homology on computations.},
+  doi      = {10.1016/j.comgeo.2020.101623},
+  file     = {:pdfs/Scaramuccia2020.pdf:PDF},
+  keywords = {Discrete Morse theory,Homotopy expansion,Morse reductions,Multiparameter persistent homology,Topological data analysis},
+  urldate  = {2024-10-22},
+}
+
+%% This BibTeX bibliography file was created using BibDesk.
+%% https://bibdesk.sourceforge.io/
+
+%% Created for Ingrid Hotz at 2024-11-19 11:33:35 +0100 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@article{Athawale2023,
+	abstract = {Visualization and analysis of multivariate data and their uncertainty are top research challenges in data visualization. Constructing fiber surfaces is a popular technique for multivariate data visualization that generalizes the idea of level-set visualization for univariate data to multivariate data. In this paper, we present a statistical framework to quantify positional probabilities of fibers extracted from uncertain bivariate fields. Specifically, we extend the state-of-the-art Gaussian models of uncertainty for bivariate data to other parametric distributions (e.g., uniform and Epanechnikov) and more general nonparametric probability distributions (e.g., histograms and kernel density estimation) and derive corresponding spatial probabilities of fibers. In our proposed framework, we leverage Green's theorem for closed-form computation of fiber probabilities when bivariate data are assumed to have independent parametric and nonparametric noise. Additionally, we present a nonparametric approach combined with numerical integration to study the positional probability of fibers when bivariate data are assumed to have correlated noise. For uncertainty analysis, we visualize the derived probability volumes for fibers via volume rendering and extracting level sets based on probability thresholds. We present the utility of our proposed techniques via experiments on synthetic and simulation datasets.},
+	author = {Tushar M. Athawale and Chris R. Johnson and Sudhanshu Sane, and David Pugmire},
+	journal = {{IEEE Transactions on Visualization and Computer Graphics (TVCG)}},
+	keywords = {Uncertainty visualization, fiber surfaces, probability},
+	number = {1},
+	title = {Fiber Uncertainty Visualization for Bivariate Data With Parametric and Nonparametric Noise Models},
+	volume = {29},
+        file      = {:pdfs/Athawale2023.pdf:PDF},
+	year = {2023}}
+
+@article{Singh2007,
+	abstract = {We present a computational method for extracting simple descriptions
+	of high dimensional data sets in the form of simplicial complexes.
+	Our method, called Mapper, is based on the idea of partial clustering
+	of the data guided by a set of functions defined on the data. The
+	proposed method is not dependent on any particular clustering algorithm,
+	i.e. any clustering algorithm may be used with Mapper. We implement
+	this method and present a few sample applications in which simple
+	descriptions of the data present important information about its
+	structure.},
+	author = {Gurjeet Singh and Facundo Memoli and Gunnar Carlsson},
+	journal = {Eurographics Symposium on Point-Based Graphics},
+	keywords = {topology, multi-field, high-dimensional, TDA},
+	note = {M. Botsch, R. Pajarola (Editors)},
+	timestamp = {2015.01.27},
+	title = {Topological Methods for the Analysis of High Dimensional Data Sets and 3D Object Recognition},
+	year = {2007}}
+
+@Article{Singh2007a,
+  author  = {Singh, Gurjeet and M{\'e}moli, Facundo and Carlsson, Gunnar E and others},
+  journal = {PBG@ Eurographics},
+  title   = {Topological methods for the analysis of high dimensional data sets and 3d object recognition.},
+  year    = {2007},
+  pages   = {091--100},
+  volume  = {2},
+}
+
+@Article{Kloetzl2022a,
+  author    = {Klötzl, Daniel and Krake, Tim and Zhou, Youjia and Hotz, Ingrid and Wang, Bei and Weiskopf, Daniel},
+  journal   = {The Visual Computer},
+  title     = {Local bilinear computation of Jacobi sets},
+  year      = {2022},
+  issn      = {1432-2315},
+  month     = jun,
+  number    = {9–10},
+  pages     = {3435--3448},
+  volume    = {38},
+  doi       = {10.1007/s00371-022-02557-4},
+  file      = {:pdfs/Kloetzl2022a.pdf:PDF},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@Article{Agarwal2020,
+  author  = {Agarwal, Tripti and Ramamurthi, Yashwanth and Chattopadhyay, Amit},
+  journal = {arXiv preprint arXiv:2008.12567},
+  title   = {A Topological Similarity Measure between Multi-Field Data using Multi-Resolution Reeb Spaces},
+  year    = {2020},
+  file    = {:pdfs/Agarwal2020.pdf:PDF},
+}
+
+@Article{Chattopadhyay2016,
+  author    = {Chattopadhyay, Amit and Carr, Hamish and Duke, David and Geng, Zhao and Saeki, Osamu},
+  journal   = {Computational Geometry},
+  title     = {Multivariate topology simplification},
+  year      = {2016},
+  issn      = {0925-7721},
+  month     = oct,
+  pages     = {1--24},
+  volume    = {58},
+  abstract  = {Topological simplification of scalar and vector fields is well-established as an effective method for analysing and visualising complex data sets. For multivariate (alternatively, multi-field) data, topological analysis requires simultaneous advances both mathematically and computationally. We propose a robust multivariate topology simplification method based on “lip”-pruning from the Reeb space. Mathematically, we show that the projection of the Jacobi set of multivariate data into the Reeb space produces a Jacobi structure that separates the Reeb space into simple components. We also show that the dual graph of these components gives rise to a Reeb skeleton that has properties similar to the scalar contour tree and Reeb graph, for topologically simple domains. We then introduce a range measure to give a scaling-invariant total ordering of the components or features that can be used for simplification. Computationally, we show how to compute Jacobi structure, Reeb skeleton, range and geometric measures in the Joint Contour Net (an approximation of the Reeb space) and that these can be used for visualisation similar to the contour tree or Reeb graph.},
+  doi       = {10.1016/j.comgeo.2016.05.006},
+  file      = {:pdfs/Chattopadhyay2016.pdf:PDF},
+  publisher = {Elsevier BV},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
